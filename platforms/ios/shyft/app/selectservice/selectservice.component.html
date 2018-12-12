@@ -1,0 +1,171 @@
+<!-- <StackLayout tkDrawerContent>
+                <RightDrawer></RightDrawer>
+        </StackLayout> -->
+<GridLayout columns="*" rows="*,6*,3*">
+        <StackLayout col="0" row="0" style="background-color: black">
+                <GridLayout columns="*,8*,*" rows="*">
+                        <StackLayout col="0" row="0" [visibility]="!this.buttonstate ? 'visible' : 'collapsed'">
+                        </StackLayout>
+                        <StackLayout col="0" row="0" [visibility]="this.buttonstate ? 'visible' : 'collapsed'">
+                                <Label class="h2 fa" text="&#xf053;" (onTap)="back()" style="horizontal-align: left; color: white; padding: 20 0 0 10 "></Label>
+                        </StackLayout>
+                        <StackLayout col="1" row="0" style="vertical-align: center">
+                                <Label class="h2" text="Schedule your vehicle" style=" color: white; text-align: center"></Label>
+                        </StackLayout>
+                        <StackLayout col="2" row="0"></StackLayout>
+                </GridLayout>
+        </StackLayout>
+        <StackLayout col="0" row="1" style="background-color: white">
+                <GridLayout columns="*" rows="2*,8*">
+                        <StackLayout col="0" row="0" style="background-color: white; border-bottom-width: 1; border-color: #404040">
+                                <Image src="res://shyftlogo"></Image>
+                        </StackLayout>
+                        <StackLayout col="0" row="1" style="background-color: white">
+                                <GridLayout columns="*" rows="3.5*,3*,3.5*">
+                                        <StackLayout col="0" row="0">
+                                                <GridLayout columns="3.5*,3*,3.5*" rows="*">
+                                                        <StackLayout col="0" row="0">
+
+                                                        </StackLayout>
+                                                        <StackLayout col="1" row="0" (onTap)="scheduleService()" style="text-align: center; font-weight: bold">
+                                                                <Image src="res://caroil" style="color: black; height:50; width: 50"></Image>
+                                                                <Label text="Select"></Label>
+                                                                <Label text="Maintenance"></Label>
+                                                        </StackLayout>
+                                                        <StackLayout col="2" row="0">
+
+                                                        </StackLayout>
+                                                </GridLayout>
+                                        </StackLayout>
+                                        <StackLayout col="0" row="1">
+                                                <GridLayout columns="3.5*,3*,3.5*" rows="*">
+                                                        <StackLayout col="0" row="0" (onTap)="callDealer()" style="text-align: center; font-weight: bold">
+                                                                <Image src="res://call" style="color: black; height:50; width: 50;"></Image>
+                                                                <Label text="Call"></Label>
+                                                                <Label text="Dealer"></Label>
+                                                        </StackLayout>
+                                                        <StackLayout col="1" row="0">
+                                                                <Image [src]="'https://s3.amazonaws.com/img.futuredms.com/vendors/logos/'+vendorLogo"></Image>
+                                                        </StackLayout>
+                                                        <StackLayout col="2" (onTap)="vehicleService()" [visibility]="this.buttonstate ? 'visible' : 'collapsed'" row="0" style="text-align: center; font-weight: bold">
+                                                                <Image src="res://service" style="color: black; height:50; width: 50"></Image>
+                                                                <Label text="Recommended"></Label>
+                                                                <Label text="Services"></Label>
+                                                        </StackLayout>
+                                                        <StackLayout col="2" [visibility]="!this.buttonstate ? 'visible' : 'collapsed'" row="0" style="text-align: center; font-weight: bold">
+                                                                <Image src="res://service" style="color: black; height:50; width: 50"></Image>
+                                                                <Label text="No"></Label>
+                                                                <Label text="Services"></Label>
+                                                        </StackLayout>
+                                                </GridLayout>
+                                        </StackLayout>
+                                        <StackLayout col="0" row="2">
+                                                <GridLayout columns="3.5*,3*,3.5*" rows="*">
+                                                        <StackLayout col="0" row="0">
+
+                                                        </StackLayout>
+                                                        <StackLayout col="1" row="0" (onTap)="vehicleHistory()" style="text-align: center; font-weight: bold">
+                                                                <Image src="res://briefcase" style="color: black; height:50; width: 50"></Image>
+                                                                <Label text="Vehicle"></Label>
+                                                                <Label text="History"></Label>
+                                                        </StackLayout>
+                                                        <StackLayout col="2" row="0">
+
+                                                        </StackLayout>
+                                                </GridLayout>
+                                        </StackLayout>
+                                </GridLayout>
+                        </StackLayout>
+                </GridLayout>
+        </StackLayout>
+        <GridLayout col="0" row="2" columns="*" rows="2*,8*" style="border-color: #404040; border-top-width: 2;">
+                <StackLayout col="0" row="0" style="vertical-align: center">
+                        <Label text="Our Mission" style="font-weight: bold; text-align: center;"></Label>
+                </StackLayout>
+                <StackLayout col="0" row="1" style="vertical-align: center; padding-top:5; border-color: #170095; border-width: 2; margin:0 5 10 5">
+                        <Label text="Eliminate the need of taking your vehicle into a service facility for repairs or maintenance. We service over 40 states and have 2000 certified service facilities sign up to use our service. In the end the goal is to make your life easier by offering a no brainer product." textWrap="true" style="text-align: center;"></Label>
+                </StackLayout>
+
+                <!-- <Label class="fa" text="&#xf155;" style="color: black; background-color: white; border-width: 1; border-radius: 75; padding: 5"></Label>
+                <Label text="1/5 Shyft Coins Earned for Free Pickup" style="color: white; margin-left: 5; font-weight: bold; vertical-align: center;"></Label> -->
+        </GridLayout>
+</GridLayout>
+<!-- <GridLayout columns="*" rows="4*,*,3*,2*" tkMainContent>
+        <StackLayout col=0 row=0>
+                <GridLayout rows="2*,8*" columns="*">
+                        <StackLayout col=0 row=0 orientation="horizontal">
+                                <GridLayout rows="*" columns="6*,*,3*">
+                                        <StackLayout col=0 row=0>
+                                                <Label [text]="'Welcome, '+user" style="padding: 10; background-color: black; color: white;"></Label>
+                                        </StackLayout>
+                                        <StackLayout col=1 row=0>
+                                        </StackLayout>
+                                        <StackLayout col=2 row=0 style="horizontal-align: right; margin: 5 5 0 0;">
+                                        </StackLayout>
+                                </GridLayout>
+                        </StackLayout>
+                        <StackLayout col=0 row=2 style="border-width: 1; border-color: #404040">
+                                <GridLayout rows="*" columns="4*,6*">
+                                        <StackLayout col=0 row=0 style="vertical-align: center">
+                                                <Image [src]="'https://s3.amazonaws.com/img.futuredms.com/vendors/logos/'+vendorLogo" style="horizontal-align: center; "></Image>
+                                        </StackLayout>
+                                        <StackLayout col=1 row=0 marginLeft=5 style="vertical-align: center">
+                                                <Label [text]="vendorName" style="font-weight: bold"></Label>
+                                                <Label [text]="vendorEmail" style="font-weight: bold"></Label>
+                                                <Label [text]="vendorPhone" style="font-weight: bold"></Label>
+                                                <Label [text]="vendorAddress.addressLine1+', '+vendorAddress.addressLine2"  textWrap="true" style="font-weight: bold;"></Label>
+                                                <Label [text]="vendorAddress.addressLine3+', '+vendorAddress.city" style="font-weight: bold"></Label>
+                                                <Label [text]="vendorAddress.state+', '+vendorAddress.zip" style="font-weight: bold"></Label>
+                                        </StackLayout>
+                                </GridLayout>
+                        </StackLayout>
+                </GridLayout>
+        </StackLayout>
+        <StackLayout col=0 row=1 style="border-bottom-width: 1; border-color: #909090">
+                <GridLayout cols="7*,3*" rows="*" orientation="horizontal">
+                        <StackLayout col=0 row=0 style="horizontal-align: left; vertical-align: center;">
+                                <Label class="h2" text="Dashboard" style="padding-left: 10; font-weight: bold;"></Label>
+                        </StackLayout>
+                        <StackLayout col=1 row=0 style="horizontal-align: right; vertical-align: center;">
+                                <Label class="h3" text="More >" style="padding-right: 10; font-weight: bold; color: black"></Label>
+                        </StackLayout>
+                </GridLayout>
+        </StackLayout>
+                <GridLayout col=0 row=2 columns="*" rows="*,*">
+                <Stacklayout orientation="horizontal" style="vertical-align: center" [class]="state1 ? 'V1' : 'V3'" column="0" row="0" padding="20"
+                        margin="20 20 10 20" (onTap)="vehicleHistory()">
+                        <Label class="fa" text="&#xf1b9;" style="text-align: center; margin-left: 10; color:white;"></Label>
+                        <Label text="Appointment History" style=" font-weight: bold; margin-left: 10;  color:white;"></Label>
+                </Stacklayout>
+                <Stacklayout orientation="horizontal" style="vertical-align: center" [class]="state2 ? 'V1' : 'V3'" column="0" row="1" padding="20"
+                        margin="10 20 20 20" (onTap)="vehicleService()" [visibility]="!this.datastate ? 'visible' : 'collapsed'">
+                        <Label class="fa" text="&#xf013;" style="text-align: center; margin-left: 10; color:white;"></Label>
+                        <Label text="Vehicle Service" style=" font-weight: bold; margin-left: 10;  color:white;"></Label>
+                </Stacklayout>
+                <Stacklayout orientation="horizontal" style="vertical-align: center" [class]="state2 ? 'V1' : 'V3'" column="0" row="1" padding="20"
+                        margin="10 20 20 20" [visibility]="this.datastate ? 'visible' : 'collapsed'">
+                        <Label class="fa" text="&#xf013;" style="text-align: center; margin-left: 10; color:white;"></Label>
+                        <Label text="No Services" style=" font-weight: bold; margin-left: 10;  color:white;"></Label>
+                </Stacklayout>
+        </GridLayout>
+        <GridLayout col=0 row=3 columns="*" rows="2*,8*">
+                <StackLayout col=0 row=0 style=" border-width: 1; border-color: black; background-color: #7cafe5">
+                        <Label text="Shyft Coins" style="color: white; horizontal-align: center; "></Label>
+                </StackLayout>
+                <StackLayout col=0 row=1>
+                        <GridLayout columns="2*,6*,2*" rows="*" style="padding: 3;">
+                                <Stacklayout col="0" row="0" (onTap)="back()" style="vertical-align: bottom">
+                                        <Label class="fa h2" text="&#xf060;" style=" color:black; horizontal-align: left;"></Label>
+                                </Stacklayout>
+                                <Stacklayout col="1" row="0" style="border-color: black; border-width: 2">
+                                        <Label text="12,479" style="padding: 2; font-weight: bold; color:white; background-color: #7cafe5; horizontal-align: center; boder-width: 1; border-color: black "></Label>
+                                        <Label text="341" style="font-weight: bold; color:black; horizontal-align: center;"></Label>
+                                        <Label text="Shyft Coins " style="font-weight: bold; color:black; horizontal-align: center;"></Label>
+                                        <Label text="to earn " style="font-weight: bold; color:black; horizontal-align: center;"></Label>
+                                        <Label text="FREE Oil Change " style="font-weight: bold; color:black; horizontal-align: center;"></Label>
+                                </Stacklayout>
+                                <Stacklayout col="2" row="0"></Stacklayout>
+                        </GridLayout>
+                </StackLayout>
+        </GridLayout>
+</GridLayout> -->

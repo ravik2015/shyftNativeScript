@@ -1,0 +1,26 @@
+{
+    "compilerOptions": {
+        "target": "es5",
+        "module": "es6",
+        "sourceMap": true,
+        "moduleResolution": "node",
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "declaration": true,
+        "lib": [
+            "es6",
+            "dom"
+        ],
+        "outDir": "../lib/",
+        "stripInternal": true
+    },
+    "exclude": [
+        "node_modules"
+    ],
+    "files": [
+        "../tmp/index.ts"
+    ],
+    "angularCompilerOptions": {
+        "skipTemplateCodegen": true
+    }
+}

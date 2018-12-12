@@ -1,0 +1,11 @@
+FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/BEMCheckBox" "${PODS_CONFIGURATION_BUILD_DIR}/Braintree" "${PODS_CONFIGURATION_BUILD_DIR}/BraintreeDropIn" "${PODS_CONFIGURATION_BUILD_DIR}/IQKeyboardManager" "${PODS_CONFIGURATION_BUILD_DIR}/MBProgressHUD" "${PODS_CONFIGURATION_BUILD_DIR}/PocketSocket" "${PODS_CONFIGURATION_BUILD_DIR}/SCLAlertView-Objective-C" "${PODS_ROOT}/Mapbox-iOS-SDK/dynamic"
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/CardIO" "${PODS_ROOT}/Headers/Public/Mapbox-iOS-SDK"
+LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'
+LIBRARY_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/CardIO/CardIO"
+OTHER_CFLAGS = $(inherited) -iquote "${PODS_CONFIGURATION_BUILD_DIR}/BEMCheckBox/BEMCheckBox.framework/Headers" -iquote "${PODS_CONFIGURATION_BUILD_DIR}/Braintree/Braintree.framework/Headers" -iquote "${PODS_CONFIGURATION_BUILD_DIR}/BraintreeDropIn/BraintreeDropIn.framework/Headers" -iquote "${PODS_CONFIGURATION_BUILD_DIR}/IQKeyboardManager/IQKeyboardManager.framework/Headers" -iquote "${PODS_CONFIGURATION_BUILD_DIR}/MBProgressHUD/MBProgressHUD.framework/Headers" -iquote "${PODS_CONFIGURATION_BUILD_DIR}/PocketSocket/PocketSocket.framework/Headers" -iquote "${PODS_CONFIGURATION_BUILD_DIR}/SCLAlertView-Objective-C/SCLAlertView_Objective_C.framework/Headers" -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/CardIO" -isystem "${PODS_ROOT}/Headers/Public/Mapbox-iOS-SDK"
+OTHER_LDFLAGS = $(inherited) -ObjC -l"CardIO" -l"c++" -l"opencv_core" -l"opencv_imgproc" -framework "AVFoundation" -framework "Accelerate" -framework "AudioToolbox" -framework "BEMCheckBox" -framework "Braintree" -framework "BraintreeDropIn" -framework "CoreMedia" -framework "CoreVideo" -framework "IQKeyboardManager" -framework "MBProgressHUD" -framework "Mapbox" -framework "MobileCoreServices" -framework "OpenGLES" -framework "PocketSocket" -framework "QuartzCore" -framework "SCLAlertView_Objective_C" -framework "Security" -framework "UIKit"
+PODS_BUILD_DIR = ${BUILD_DIR}
+PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
+PODS_PODFILE_DIR_PATH = ${SRCROOT}/.
+PODS_ROOT = ${SRCROOT}/Pods

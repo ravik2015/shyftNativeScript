@@ -1,0 +1,70 @@
+{
+  "_from": "nativescript-background-http@^3.1.0",
+  "_id": "nativescript-background-http@3.2.2",
+  "_inBundle": false,
+  "_integrity": "sha512-VVU+XlPa9wdryKjBbS1E4k+O737DafzuLo+HJLH+JYEILQg5//sYJda2bKt9gMXMom/iWYGE55CBZ08VXtlplQ==",
+  "_location": "/nativescript-background-http",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "nativescript-background-http@^3.1.0",
+    "name": "nativescript-background-http",
+    "escapedName": "nativescript-background-http",
+    "rawSpec": "^3.1.0",
+    "saveSpec": null,
+    "fetchSpec": "^3.1.0"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/nativescript-background-http/-/nativescript-background-http-3.2.2.tgz",
+  "_shasum": "9dcb277789996f486793d0c3180b0df22a1a2ab9",
+  "_spec": "nativescript-background-http@^3.1.0",
+  "_where": "/Users/saurabh.chauhan/Desktop/shyft",
+  "author": {
+    "name": "NativeScript Team"
+  },
+  "bugs": {
+    "url": "https://github.com/NativeScript/nativescript-background-http/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "A cross platform plugin for [the NativeScript framework](http://www.nativescript.org), that provides background upload for iOS and Android.",
+  "devDependencies": {
+    "tns-core-modules": "^3.4.0",
+    "tns-platform-declarations": "^3.4.0",
+    "typescript": "~2.7.1"
+  },
+  "homepage": "http://nativescript.github.io/nativescript-background-http/",
+  "keywords": [
+    "background",
+    "http",
+    "upload",
+    "download",
+    "NativeScript"
+  ],
+  "license": "Apache-2.0",
+  "main": "background-http",
+  "name": "nativescript-background-http",
+  "nativescript": {
+    "platforms": {
+      "android": "3.0.0",
+      "ios": "3.0.0"
+    }
+  },
+  "peerDependencies": {
+    "tns-core-modules": "^3.4.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NativeScript/nativescript-background-http.git"
+  },
+  "scripts": {
+    "build": "npm i && tsc",
+    "prepack": "tsc"
+  },
+  "typings": "index.d.ts",
+  "url": "https://github.com/NativeScript/nativescript-background-http/issues",
+  "version": "3.2.2"
+}

@@ -1,0 +1,27 @@
+<GridLayout columns="*" rows="*,9*">
+                <StackLayout col="0" row="0" style="background-color: black" >
+                    <GridLayout columns="2.5*,5*,2.5*" rows="*">
+                                    <StackLayout col="0" row="0">
+                                             <Label class="h2" text="Close" (onTap)="close()" style="horizontal-align: left; color: white; padding: 20 0 10 20"></Label>     
+                                    </StackLayout>
+                                    <StackLayout col="1" row="0" style="vertical-align: center">
+                                            <Label class="h2" text="Makes"  style=" color: white; text-align: center"></Label>                                                                                                                                                                             
+                                    </StackLayout>
+                                    <StackLayout col="2" row="0">
+                                               
+                                    </StackLayout>                                        
+                    </GridLayout>                                        
+                </StackLayout> 
+                        <StackLayout col="0" row="1">
+                                <ListView  [visibility]="!this.busy ? 'visible' : 'collapsed'" [items]="makedata" (itemTap)="onMakeTap($event)">
+                                        <ng-template tkListItemTemplate let-item="item">
+                                        <StackLayout style="border-width: 1; border-color: #dadada">
+                                                <Label [text]="item.Make_Name" style="font-weight: bold; padding: 20; text-align: center"></Label>
+                                        </StackLayout>
+                                        </ng-template>
+                                </ListView>
+                        </StackLayout>
+                <ActivityIndicator column=0 row=1   [busy]="busy"  class="activity-indicator"></ActivityIndicator>
+            </GridLayout>
+            
+            

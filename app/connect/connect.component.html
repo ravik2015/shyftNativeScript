@@ -1,0 +1,16 @@
+<GridLayout columns="*" rows="*,9*">
+        <StackLayout col="0" row="0" style="background-color: black" >
+                <GridLayout columns="*,8*,*" rows="*">
+                                <StackLayout col="0" row="0">
+                                         <Label class="h2 fa" text="&#xf060;" (onTap)="onBack()" style="horizontal-align: left; color: white; padding: 20 0 0 10 "></Label>     
+                                </StackLayout>
+                                <StackLayout col="1" row="0" style="vertical-align: center">
+                                        <Label class="h2" text="Connection"  style=" color: white; text-align: center"></Label>                                                                                                                                                                             
+                                </StackLayout>
+                                <StackLayout col="2" row="0"></StackLayout>                                        
+                </GridLayout>                                        
+        </StackLayout>  
+        <GridLayout column=0 row=1 style="vertical-align: center">
+                <Label class="h2" text="Connect"  (onTap)="connect()" style=" text-align: center"></Label>                                                                                                                                                                                             
+        </GridLayout>        
+</GridLayout>

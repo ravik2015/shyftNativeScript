@@ -1,0 +1,4 @@
+'use strict';
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.baseurl = "https://uat.futuredms.com/shyft-api/";
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoidXRpbHMuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJ1dGlscy50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxZQUFZLENBQUM7O0FBRUEsUUFBQSxPQUFPLEdBQVMsc0NBQXNDLENBQUMiLCJzb3VyY2VzQ29udGVudCI6WyIndXNlIHN0cmljdCc7XG5cbmV4cG9ydCBjb25zdCBiYXNldXJsOiBzdHJpbmc9XCJodHRwczovL3VhdC5mdXR1cmVkbXMuY29tL3NoeWZ0LWFwaS9cIjsgICAgXG4iXX0=

@@ -1,0 +1,105 @@
+<GridLayout columns="*" rows="*,7*,*,*">
+        <StackLayout col="0" row="0" style="background-color: black">
+                <GridLayout columns="*,8*,*" rows="*">
+                        <StackLayout col="0" row="0">
+                                <Label class="h2 fa" text="&#xf053;" (onTap)="onBack()" style="horizontal-align: left; color: white; padding: 20 0 0 10 "></Label>
+                        </StackLayout>
+                        <StackLayout col="1" row="0" style="vertical-align: center">
+                                <Label class="h2" text="Service Categories" style=" color: white; text-align: center"></Label>
+                        </StackLayout>
+                        <StackLayout col="2" row="0"></StackLayout>
+                </GridLayout>
+        </StackLayout>
+        <!-- <StackLayout col="0" row="1">
+                <ScrollView *ngFor="let item of vendorCategories; let i = index" (onTap)="vendorCategoryTap($event, i, item)" style="margin: 10">
+                        <StackLayout  style="border-bottom-width:1; border-color:#606060; vertical-align: center">
+                                <Label [text]="item?.name" textWrap="true" style="color: black; text-align: left; font-weight: bold; padding: 20; background-color: white"></Label>
+                                <ScrollView *ngFor="let item of item.services; let i = index" (onTap)="vendorCategoryTap($event, i, item)" style="margin: 10">
+                                                <StackLayout orientation="horizontal" style="border-bottom-width:1; border-color:#606060; vertical-align: center">
+                                                        <Label [text]="item?.name" textWrap="true" style="color: black; text-align: left; font-weight: bold; padding: 20; background-color: white"></Label>
+                                                </StackLayout>
+                                        </ScrollView>
+                        </StackLayout>
+                </ScrollView>
+        </StackLayout> -->
+        <ListView col="0" row="1" [items]="items" >
+                <ng-template let-item="item" let-i="index" let-odd="odd" let-even="even">
+                        <StackLayout style="border-bottom-width:1; border-color:#606060; vertical-align: center; margin: 10">
+                                <Label [text]="item?.name +' '+'('+item.services.length+')'" textWrap="true" style="color: white; text-align: left; font-weight: bold; padding: 20; background-color: black"></Label>
+                                <ScrollView [visibility]="isItemVisible ? 'visible' : 'collapsed'" *ngFor="let item of item.services; let i = index"  style="margin: 10">
+                                        <GridLayout columns="6*,2*,2*" rows="*" style="margin: 0 10 10 0 ">
+                                                <StackLayout col="0" row="0">
+                                                        <Label [text]="item.name ? item.name : 'No Service'" textWrap="true"></Label>
+                                                </StackLayout>
+                                                <StackLayout col="1" row="0" style="margin: 5">
+                                                        <Label [text]="'$'+item.base_price ? '$'+item.base_price : '0'"></Label>
+                                                </StackLayout>
+                                                <StackLayout col="2" row="0">
+                                                        <Switch [checked]="item.state ? item.state : 'false'" (checkedChange)="tapped($event, item, i)"></Switch>
+                                                </StackLayout>
+                                        </GridLayout>
+                                </ScrollView>
+                        </StackLayout>
+                </ng-template>
+        </ListView>
+        <StackLayout col="0" row="2" (onTap)="proceedPickup()" style="margin:10; background-color: dodgerblue; border-width: 1; border-radius: 50; vertical-align: center">
+                <Label text="Proceed to Pickup" style="padding: 10; text-align: center;"></Label>
+        </StackLayout>
+        <StackLayout col="0" row="3" style="background-color: black">
+                <GridLayout columns="*,8*,*" rows="*">
+                        <StackLayout col="0" row="0" style="vertical-align: center; margin-left: 10">
+                                <Image src="res://cloud_icon" style="horizontal-align: center"></Image>
+                        </StackLayout>
+                        <StackLayout col="1" row="0" style="vertical-align: center">
+                                <Label class="h2" text="Shyft Auto By Kloud DMS" style=" color: white; text-align: center;"></Label>
+                        </StackLayout>
+                        <StackLayout col="2" row="0"></StackLayout>
+                </GridLayout>
+        </StackLayout>
+</GridLayout>
+
+<!-- 
+<GridLayout columns="*" rows="*,8*,*">
+        <StackLayout col="0" row="0" style="background-color: black">
+                <GridLayout columns="*,8*,*" rows="*">
+                        <StackLayout col="0" row="0">
+                                <Label class="h2 fa" text="&#xf060;" (onTap)="onBack()" style="horizontal-align: left; color: white; padding: 20 0 0 10 "></Label>
+                        </StackLayout>
+                        <StackLayout col="1" row="0" style="vertical-align: center">
+                                <Label class="h2" text="Service Categories" style=" color: white; text-align: center"></Label>
+                        </StackLayout>
+                        <StackLayout col="2" row="0"></StackLayout>
+                </GridLayout>
+        </StackLayout>
+        <StackLayout col="0" row="1">
+                <Accordion [items]="items" headerTextBold="true" headerTextColor="white" headerColor="pink" headerTextColor="blue" allowMultiple="true"
+                        selectedIndex="2">
+
+                        <ng-template accordionHeaderTemplate let-item="item" let-i="index">
+                                <GridLayout backgroundColor="black" columns="auto,*">
+                                        <Label [text]="item.name" style="color: white; padding: 10"></Label>
+                                </GridLayout>
+                        </ng-template>
+
+                        <ng-template accordionItemTemplate let-item="item" let-parent="parentIndex" let-even="even" let-child="childIndex">
+                                <StackLayout style="padding: 10;">
+                                        <GridLayout columns="6*,2*,2*">
+                                                <StackLayout col="0" row="0">
+                                                        <Label [text]="item.name" textWrap="true"></Label>
+                                                </StackLayout>
+                                                <StackLayout col="1" row="0" style="margin: 5">
+                                                        <Label [text]="'$'+item.base_price"></Label>
+                                                </StackLayout>
+                                                <StackLayout col="2" row="0">
+                                                        <Switch [checked]="item.state" (checkedChange)="tapped($event, item)"></Switch>
+                                                </StackLayout>
+                                        </GridLayout>
+                                </StackLayout>
+                        </ng-template>
+                </Accordion>
+        </StackLayout>
+        <StackLayout col="0" row="2" (onTap)="proceedPickup()" style="margin:10; background-color: dodgerblue; border-width: 1; border-radius: 50; vertical-align: center">
+                <Label text="Proceed to Pickup" style="padding: 10; text-align: center;"></Label>
+        </StackLayout>
+
+</GridLayout> -->

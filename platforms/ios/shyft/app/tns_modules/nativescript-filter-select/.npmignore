@@ -1,0 +1,12 @@
+demo/
+demo-ng/
+demo-webpack/
+screenshots/
+node_modules/
+scripts/
+*.gif
+*.png
+*.log
+*.map
+*.ts
+!*.d.ts

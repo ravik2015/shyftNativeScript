@@ -1,0 +1,37 @@
+use_frameworks!
+
+target "shyft" do
+# Begin Podfile - /Users/saurabh.chauhan/Desktop/shyft/node_modules/nativescript-braintree/platforms/ios/Podfile 
+ platform :ios, '9.0'
+
+pod 'BraintreeDropIn'
+pod 'Braintree/Apple-Pay'
+pod 'Braintree/PayPal'
+pod 'Braintree/Venmo'
+pod 'Braintree/3D-Secure'
+pod 'CardIO' 
+ # End Podfile 
+# Begin Podfile - /Users/saurabh.chauhan/Desktop/shyft/node_modules/nativescript-checkbox/platforms/ios/Podfile 
+ pod 'BEMCheckBox', '~> 1.4.1'
+ 
+ # End Podfile 
+# Begin Podfile - /Users/saurabh.chauhan/Desktop/shyft/node_modules/nativescript-fancyalert/platforms/ios/Podfile 
+ pod 'SCLAlertView-Objective-C' 
+ # End Podfile 
+# Begin Podfile - /Users/saurabh.chauhan/Desktop/shyft/node_modules/nativescript-iqkeyboardmanager/platforms/ios/Podfile 
+ pod 'IQKeyboardManager', '~> 5.0.0'
+ 
+ # End Podfile 
+# Begin Podfile - /Users/saurabh.chauhan/Desktop/shyft/node_modules/nativescript-loading-indicator/platforms/ios/Podfile 
+ pod 'MBProgressHUD'
+ 
+ # End Podfile 
+# Begin Podfile - /Users/saurabh.chauhan/Desktop/shyft/node_modules/nativescript-mapbox/platforms/ios/Podfile 
+ pod 'Mapbox-iOS-SDK', '~> 3.7.3'
+#pod 'MapboxDirections.swift', :git => 'https://github.com/mapbox/MapboxDirections.swift.git', :tag => 'v0.6.0' 
+ # End Podfile 
+# Begin Podfile - /Users/saurabh.chauhan/Desktop/shyft/node_modules/nativescript-websockets/platforms/ios/Podfile 
+ pod 'PocketSocket', :git => 'https://github.com/NathanaelA/PocketSocket' 
+ # End Podfile 
+
+end

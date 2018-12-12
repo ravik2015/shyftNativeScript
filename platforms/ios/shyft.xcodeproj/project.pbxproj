@@ -1,0 +1,813 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+/* Begin PBXBuildFile section */
+		0010D14954DC468AB31F3AE7 /* upload@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 088D5C78D6634CBBBCDFD575 /* upload@2x.png */; };
+		019C40F1770E4AEC9E87BD8F /* house.png in Resources */ = {isa = PBXBuildFile; fileRef = 81111B804E8F461EA553255E /* house.png */; };
+		04150FCFA3854C319FDF4116 /* cloud_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 872BD8DD21C44FE5AA79E97C /* cloud_icon.png */; };
+		0801E57BA72B45D2BB40C766 /* TNSCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = ECC09CB6D6E7406E8DE3EC82 /* TNSCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0AC3716AAAE34AA8BF2A6C09 /* call@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C6F2EC3E621347C7B465B142 /* call@3x.png */; };
+		0D1049B0A48F4DC39E7A31F8 /* cancel@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3BFED7B7D0484BC7911905F5 /* cancel@2x.png */; };
+		14E88C74568D43D28D07E2DA /* TelerikAppFeedback.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6DC97E35B32D4B05BA79D57D /* TelerikAppFeedback.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		171C64FA3B574E6284CEC425 /* TNSAutoComplete.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 866CCA34B22848D79AE656AF /* TNSAutoComplete.framework */; };
+		185A7282D3F34196B59C5F05 /* greendot@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CA978636EB4D4FC29396D3E1 /* greendot@3x.png */; };
+		1D838A0CE9934326A6060F56 /* service@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AEEDCBBC172F400C8FFB3E7E /* service@2x.png */; };
+		1F8D8D10C5CA4E8D8A91EDBD /* cloud_ic.png in Resources */ = {isa = PBXBuildFile; fileRef = A002F90C0E194549836AF6E5 /* cloud_ic.png */; };
+		20995D1B1CE6441FBC797B68 /* circle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 09EEBBCAEB1E4969BA9E9264 /* circle@2x.png */; };
+		26FB266D21AE460CB65581D1 /* shyftlogo@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 766BFA548B574437B3082169 /* shyftlogo@3x.png */; };
+		3632488E91B941E891D5A7D5 /* caroil@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 89D910A3667B43148DD6D8FF /* caroil@3x.png */; };
+		371B09FA3AF64E80A899DD71 /* telephone@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B7049D9AA9C46D5AAFDF934 /* telephone@3x.png */; };
+		3801585F480D4CCEB5D74CA4 /* reddot@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9075562CACA94FECA98A9638 /* reddot@3x.png */; };
+		382D7DE236EF44468D1292E8 /* user.png in Resources */ = {isa = PBXBuildFile; fileRef = EA48F67D8C0E4B70ACDA9932 /* user.png */; };
+		39A0BD11EF0D43F88B957C53 /* filledcircle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C56EB82D8CC04AC0A4CB8B7A /* filledcircle@2x.png */; };
+		3EC4B4A696E94533840D703E /* filledcircle@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4BD025B6377F4696881B2181 /* filledcircle@3x.png */; };
+		3FBDD18D70224231A68DD2CC /* TNSCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECC09CB6D6E7406E8DE3EC82 /* TNSCore.framework */; };
+		4174C1FFAC6E4F9AA7E24639 /* cancel@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 68CE82E6611945C895204929 /* cancel@3x.png */; };
+		41D19C7AC30B47B6B4E7D403 /* TNSSideDrawer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D7C4F5FB6C84322A9F58E3B /* TNSSideDrawer.framework */; };
+		4320B49C31A14DAAAB25F669 /* TNSAutoComplete.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 866CCA34B22848D79AE656AF /* TNSAutoComplete.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4332A874B97B48D6ACF1AA4C /* TNSWidgets.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A10B361607234B2EA1288722 /* TNSWidgets.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4A495EF924E24326A945102E /* arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = AF0FD3E9A0BF454D9950AA40 /* arrow.png */; };
+		4E8665566D464B9F95AEF72F /* TNSCalendar.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3C6BD8FE838E428BA6DD2BE9 /* TNSCalendar.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5119841E2C424574B5298FE3 /* TNSGauge.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9564F4F4CB11420395E97A5D /* TNSGauge.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		54A49F9D00904B5DA95AA93E /* cancel.png in Resources */ = {isa = PBXBuildFile; fileRef = D81889197656467088074840 /* cancel.png */; };
+		559A70C8AE2C4A538DF17CD8 /* telephone.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D16066248BE441FAEAB98EB /* telephone.png */; };
+		5D9FB7E520424CF384E69AE4 /* reddot.png in Resources */ = {isa = PBXBuildFile; fileRef = 708DE34C360D47C89A8DC1D4 /* reddot.png */; };
+		5DA71A15535F4D7881A94D6C /* statuscar.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B9B36630DD3441BB2540037 /* statuscar.png */; };
+		614361C350984D8E97C2B0AF /* shyftlogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BE4E044F62F4181B68BAA67 /* shyftlogo.png */; };
+		63D3B459EB1F45C298DACCF3 /* briefcase.png in Resources */ = {isa = PBXBuildFile; fileRef = 97ACB28C86764B089C8CED28 /* briefcase.png */; };
+		690E15344AD74FCDB3E44516 /* add.png in Resources */ = {isa = PBXBuildFile; fileRef = B46F68D0037C42B1B9D33B6A /* add.png */; };
+		69F5D8DFCDD54CFCA56BB8C3 /* caroil@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 87EEAE25A12B4A1DB4C981C2 /* caroil@2x.png */; };
+		6BCF713AEA3E48478C920E05 /* dots.png in Resources */ = {isa = PBXBuildFile; fileRef = 21B4C025EF1246FFBDD00EAE /* dots.png */; };
+		6D958676A7184A3780051909 /* circle.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B1AF0B8386A4EA4AEF3FA6F /* circle.png */; };
+		6E898E756DAF40A1B5F7D248 /* shyftlogo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8AF41372FDA9491F95921036 /* shyftlogo@2x.png */; };
+		6F960BCA40844396B2B66451 /* message@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 07D0385B067C444F873CEC94 /* message@2x.png */; };
+		74F87682CF281E84A2DD22EF /* Pods_shyft.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F421E3474E170D41809278C /* Pods_shyft.framework */; };
+		76306547F03643F0842C0910 /* navigation in Resources */ = {isa = PBXBuildFile; fileRef = 7CFB36489CF14D42B7FC988C /* navigation */; };
+		77533C369A044FE9B7316EBA /* message.png in Resources */ = {isa = PBXBuildFile; fileRef = 6009A37F689A497F88FB6635 /* message.png */; };
+		7C4B91A15C6E4D6FAD35E250 /* TelerikAppFeedback.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DC97E35B32D4B05BA79D57D /* TelerikAppFeedback.framework */; };
+		7DAF485A3C3E401195CF58CE /* build.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 98004724104A4D1989E5384D /* build.xcconfig */; };
+		80C5856BD647496B96C7BFEA /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = 750470993FBC4D3B8E7FF326 /* back.png */; };
+		841456D7D80147F5A5D0689C /* TNSSideDrawer.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6D7C4F5FB6C84322A9F58E3B /* TNSSideDrawer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		857FFA31D87D47DCB37CF62C /* camera.png in Resources */ = {isa = PBXBuildFile; fileRef = C3F133ACD9CE4679A025A729 /* camera.png */; };
+		858B842D18CA22B800AB12DE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 858B833A18CA111C00AB12DE /* InfoPlist.strings */; };
+		89888E21EB0D4DFBB70186E3 /* calendar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 12A3907CC5C64587BF978F0A /* calendar@2x.png */; };
+		8BC9D02BB74A4CD0A8843F57 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52E79F2D6C2545FDAC756126 /* LaunchScreen.storyboard */; };
+		92903B3A0F634A73B50EBE9E /* TNSGauge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9564F4F4CB11420395E97A5D /* TNSGauge.framework */; };
+		959B7848F0964246B2066ACE /* call.png in Resources */ = {isa = PBXBuildFile; fileRef = 3629ECA8BE5048AEB284F533 /* call.png */; };
+		973B8399995C48CA8394360D /* telephone@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A99F9D6FF1E048E5913DDA36 /* telephone@2x.png */; };
+		9CD5943B340848109B8AEFCE /* filledcircle.png in Resources */ = {isa = PBXBuildFile; fileRef = A2457DD5BC7645F58B4D4180 /* filledcircle.png */; };
+		9E213516AC5B4AB49E9BB77E /* house@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C2DC96077E74F7A8CB6AC3D /* house@3x.png */; };
+		9F8AD013DBD84E5CAE4DF5C5 /* greendot@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ECAFFE39DA084AFE93F58CFC /* greendot@2x.png */; };
+		A5224D2367A444E0A52CEE3A /* TNSListView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17FDCC3386C946128E40F02E /* TNSListView.framework */; };
+		A78AB26EA6554CC68ED41194 /* greendot.png in Resources */ = {isa = PBXBuildFile; fileRef = CAAC47FCA718445BAB26F3AB /* greendot.png */; };
+		A9D2B0352D86404BB556AD9F /* statuscar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 33C32D9869C34E74B092D0F2 /* statuscar@2x.png */; };
+		AD089A0005FC4B23ADCA9494 /* line.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CAE62E02FFE47EE95005239 /* line.png */; };
+		B02997E3463746D797EB6861 /* upload.png in Resources */ = {isa = PBXBuildFile; fileRef = 5BE9FFDE99894AA19F2F7AC6 /* upload.png */; };
+		B0E8278C3448472F98087CF9 /* TNSListView.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 17FDCC3386C946128E40F02E /* TNSListView.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B1E6F9ACA1B94051802B97CC /* upload@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4742BFCA178E40148B2BBBF1 /* upload@3x.png */; };
+		B6531C1363C74FE29A249AC6 /* briefcase@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 074E5ACA1AAB419DB74D09B1 /* briefcase@2x.png */; };
+		BBF71D3DEBCA4E119088D091 /* message@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FAEAB66F0B474F24A707E139 /* message@3x.png */; };
+		BBF8C1D23CC64B7E80185EFE /* calendar@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 25B895A772C34588912BE434 /* calendar@3x.png */; };
+		BCC48A7B194341DF9BEAD87D /* line@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A0D9824F886429D806D3718 /* line@3x.png */; };
+		C09B7564105F4A9188B3F2F6 /* TNSDataForm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D06AEDE020DE4626A2CACC7B /* TNSDataForm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C4E558C9C98E47EAA5E95CC4 /* TNSDataForm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D06AEDE020DE4626A2CACC7B /* TNSDataForm.framework */; };
+		C6AC6EFE54F44C0CB565C0D2 /* calendar.png in Resources */ = {isa = PBXBuildFile; fileRef = 55040630F6014B7C9729C483 /* calendar.png */; };
+		C8DDC47FDC5A4B37B037A473 /* statuscar@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 79DEF5C30A8C4E7E9240F095 /* statuscar@3x.png */; };
+		CD45EE7C18DC2D5800FB50C0 /* app in Resources */ = {isa = PBXBuildFile; fileRef = CD45EE7A18DC2D5800FB50C0 /* app */; };
+		CD62955D1BB2678900AE3A93 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CD62955C1BB2678900AE3A93 /* main.m */; };
+		D54B5F56065545A5A17B27F2 /* line@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F4C138B3DD9042C392A2D732 /* line@2x.png */; };
+		D5DA0939CB874CC2A501A577 /* service.png in Resources */ = {isa = PBXBuildFile; fileRef = D139967A174445D08F9EBB72 /* service.png */; };
+		D946736B5E6A48B8BF6C2B3C /* reddot@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E603A68890B0413AAF2F6BAF /* reddot@2x.png */; };
+		D9BC9ED8700E49C18CB24BEB /* TNSCalendar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C6BD8FE838E428BA6DD2BE9 /* TNSCalendar.framework */; };
+		D9D742706F9844E9853F3149 /* circle@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A81539A5FF14DC0886087B3 /* circle@3x.png */; };
+		E3B9AAB57C114CD1AE481146 /* TNSWidgets.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A10B361607234B2EA1288722 /* TNSWidgets.framework */; };
+		E549B17865644B1BA3065722 /* car.png in Resources */ = {isa = PBXBuildFile; fileRef = 812900DCD9D44FD48DC36D98 /* car.png */; };
+		E61EEDFA12A040DA9692FC2E /* call@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 35B89910C0844FADB9080D33 /* call@2x.png */; };
+		E75C44AB0624472AA13E9AE7 /* TNSChart.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66B265B9D6514E96B7A9BAB7 /* TNSChart.framework */; };
+		EADC9398FB994C6F899166AB /* marker.png in Resources */ = {isa = PBXBuildFile; fileRef = 719EDEFF8DA44407BFF6E8A3 /* marker.png */; };
+		EBC972E046EC4968BB3ECB1B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B9D28BF9C2B43138BCBC272 /* Assets.xcassets */; };
+		EE16A00C55AB469FAA5B1DDF /* TNSChart.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 66B265B9D6514E96B7A9BAB7 /* TNSChart.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F0EFE6DF6258402DB9522F88 /* caroil.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C26F3C03D3541C0A6180303 /* caroil.png */; };
+		F1285F06898C4FA59E7531C9 /* service@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FD60439341394999BF4BA853 /* service@3x.png */; };
+		F9247C5E35014697BAC816B4 /* house@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6105EDD448B54FC3B8E04FC6 /* house@2x.png */; };
+		FB67680D50504221B8DF52C1 /* drawer.png in Resources */ = {isa = PBXBuildFile; fileRef = 508D908708C349468C394485 /* drawer.png */; };
+		FD0E281E5172477DABEC1C83 /* briefcase@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C1386170070340169F437C29 /* briefcase@3x.png */; };
+		FF905F3205C74E33A27E12CB /* logo_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 6083201CE62B4BDDBDF5E2CB /* logo_2.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		85F5BDFC1A9363BE006B9701 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				4320B49C31A14DAAAB25F669 /* TNSAutoComplete.framework in Embed Frameworks */,
+				4E8665566D464B9F95AEF72F /* TNSCalendar.framework in Embed Frameworks */,
+				EE16A00C55AB469FAA5B1DDF /* TNSChart.framework in Embed Frameworks */,
+				0801E57BA72B45D2BB40C766 /* TNSCore.framework in Embed Frameworks */,
+				C09B7564105F4A9188B3F2F6 /* TNSDataForm.framework in Embed Frameworks */,
+				5119841E2C424574B5298FE3 /* TNSGauge.framework in Embed Frameworks */,
+				B0E8278C3448472F98087CF9 /* TNSListView.framework in Embed Frameworks */,
+				841456D7D80147F5A5D0689C /* TNSSideDrawer.framework in Embed Frameworks */,
+				14E88C74568D43D28D07E2DA /* TelerikAppFeedback.framework in Embed Frameworks */,
+				4332A874B97B48D6ACF1AA4C /* TNSWidgets.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		074E5ACA1AAB419DB74D09B1 /* briefcase@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "briefcase@2x.png"; path = "shyft/Resources/briefcase@2x.png"; sourceTree = "<group>"; };
+		07D0385B067C444F873CEC94 /* message@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "message@2x.png"; path = "shyft/Resources/message@2x.png"; sourceTree = "<group>"; };
+		088D5C78D6634CBBBCDFD575 /* upload@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "upload@2x.png"; path = "shyft/Resources/upload@2x.png"; sourceTree = "<group>"; };
+		09EEBBCAEB1E4969BA9E9264 /* circle@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "circle@2x.png"; path = "shyft/Resources/circle@2x.png"; sourceTree = "<group>"; };
+		0B7049D9AA9C46D5AAFDF934 /* telephone@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "telephone@3x.png"; path = "shyft/Resources/telephone@3x.png"; sourceTree = "<group>"; };
+		0BE4E044F62F4181B68BAA67 /* shyftlogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = shyftlogo.png; path = shyft/Resources/shyftlogo.png; sourceTree = "<group>"; };
+		12A3907CC5C64587BF978F0A /* calendar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "calendar@2x.png"; path = "shyft/Resources/calendar@2x.png"; sourceTree = "<group>"; };
+		17FDCC3386C946128E40F02E /* TNSListView.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TNSListView.framework; path = "$(SRCROOT)/../../node_modules/nativescript-pro-ui/platforms/ios/TNSListView.framework"; sourceTree = "<group>"; };
+		21B4C025EF1246FFBDD00EAE /* dots.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = dots.png; path = shyft/Resources/dots.png; sourceTree = "<group>"; };
+		25B895A772C34588912BE434 /* calendar@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "calendar@3x.png"; path = "shyft/Resources/calendar@3x.png"; sourceTree = "<group>"; };
+		2B9B36630DD3441BB2540037 /* statuscar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = statuscar.png; path = shyft/Resources/statuscar.png; sourceTree = "<group>"; };
+		33C32D9869C34E74B092D0F2 /* statuscar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "statuscar@2x.png"; path = "shyft/Resources/statuscar@2x.png"; sourceTree = "<group>"; };
+		35B89910C0844FADB9080D33 /* call@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "call@2x.png"; path = "shyft/Resources/call@2x.png"; sourceTree = "<group>"; };
+		3629ECA8BE5048AEB284F533 /* call.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = call.png; path = shyft/Resources/call.png; sourceTree = "<group>"; };
+		3BFED7B7D0484BC7911905F5 /* cancel@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "cancel@2x.png"; path = "shyft/Resources/cancel@2x.png"; sourceTree = "<group>"; };
+		3C6BD8FE838E428BA6DD2BE9 /* TNSCalendar.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TNSCalendar.framework; path = "$(SRCROOT)/../../node_modules/nativescript-pro-ui/platforms/ios/TNSCalendar.framework"; sourceTree = "<group>"; };
+		4742BFCA178E40148B2BBBF1 /* upload@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "upload@3x.png"; path = "shyft/Resources/upload@3x.png"; sourceTree = "<group>"; };
+		4A0D9824F886429D806D3718 /* line@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "line@3x.png"; path = "shyft/Resources/line@3x.png"; sourceTree = "<group>"; };
+		4BD025B6377F4696881B2181 /* filledcircle@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "filledcircle@3x.png"; path = "shyft/Resources/filledcircle@3x.png"; sourceTree = "<group>"; };
+		508D908708C349468C394485 /* drawer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = drawer.png; path = shyft/Resources/drawer.png; sourceTree = "<group>"; };
+		52E79F2D6C2545FDAC756126 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = unknown; name = LaunchScreen.storyboard; path = shyft/Resources/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		55040630F6014B7C9729C483 /* calendar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = calendar.png; path = shyft/Resources/calendar.png; sourceTree = "<group>"; };
+		5A81539A5FF14DC0886087B3 /* circle@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "circle@3x.png"; path = "shyft/Resources/circle@3x.png"; sourceTree = "<group>"; };
+		5BE9FFDE99894AA19F2F7AC6 /* upload.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = upload.png; path = shyft/Resources/upload.png; sourceTree = "<group>"; };
+		5C2DC96077E74F7A8CB6AC3D /* house@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "house@3x.png"; path = "shyft/Resources/house@3x.png"; sourceTree = "<group>"; };
+		6009A37F689A497F88FB6635 /* message.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = message.png; path = shyft/Resources/message.png; sourceTree = "<group>"; };
+		6083201CE62B4BDDBDF5E2CB /* logo_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logo_2.png; path = shyft/Resources/logo_2.png; sourceTree = "<group>"; };
+		6105EDD448B54FC3B8E04FC6 /* house@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "house@2x.png"; path = "shyft/Resources/house@2x.png"; sourceTree = "<group>"; };
+		66B265B9D6514E96B7A9BAB7 /* TNSChart.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TNSChart.framework; path = "$(SRCROOT)/../../node_modules/nativescript-pro-ui/platforms/ios/TNSChart.framework"; sourceTree = "<group>"; };
+		68CE82E6611945C895204929 /* cancel@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "cancel@3x.png"; path = "shyft/Resources/cancel@3x.png"; sourceTree = "<group>"; };
+		6D7C4F5FB6C84322A9F58E3B /* TNSSideDrawer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TNSSideDrawer.framework; path = "$(SRCROOT)/../../node_modules/nativescript-pro-ui/platforms/ios/TNSSideDrawer.framework"; sourceTree = "<group>"; };
+		6DC97E35B32D4B05BA79D57D /* TelerikAppFeedback.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TelerikAppFeedback.framework; path = "$(SRCROOT)/../../node_modules/nativescript-pro-ui/platforms/ios/TelerikAppFeedback.framework"; sourceTree = "<group>"; };
+		6F421E3474E170D41809278C /* Pods_shyft.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_shyft.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		708DE34C360D47C89A8DC1D4 /* reddot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = reddot.png; path = shyft/Resources/reddot.png; sourceTree = "<group>"; };
+		719EDEFF8DA44407BFF6E8A3 /* marker.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = marker.png; path = shyft/Resources/marker.png; sourceTree = "<group>"; };
+		750470993FBC4D3B8E7FF326 /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = back.png; path = shyft/Resources/back.png; sourceTree = "<group>"; };
+		766BFA548B574437B3082169 /* shyftlogo@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "shyftlogo@3x.png"; path = "shyft/Resources/shyftlogo@3x.png"; sourceTree = "<group>"; };
+		79DEF5C30A8C4E7E9240F095 /* statuscar@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "statuscar@3x.png"; path = "shyft/Resources/statuscar@3x.png"; sourceTree = "<group>"; };
+		7CAE62E02FFE47EE95005239 /* line.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = line.png; path = shyft/Resources/line.png; sourceTree = "<group>"; };
+		7CFB36489CF14D42B7FC988C /* navigation */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = unknown; name = navigation; path = shyft/Resources/navigation; sourceTree = "<group>"; };
+		7D16066248BE441FAEAB98EB /* telephone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = telephone.png; path = shyft/Resources/telephone.png; sourceTree = "<group>"; };
+		81111B804E8F461EA553255E /* house.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = house.png; path = shyft/Resources/house.png; sourceTree = "<group>"; };
+		812900DCD9D44FD48DC36D98 /* car.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = car.png; path = shyft/Resources/car.png; sourceTree = "<group>"; };
+		858B832E18CA111C00AB12DE /* shyft.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = shyft.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		858B833918CA111C00AB12DE /* shyft-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "shyft-Info.plist"; sourceTree = "<group>"; };
+		858B833B18CA111C00AB12DE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		858B833F18CA111C00AB12DE /* shyft-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "shyft-Prefix.pch"; sourceTree = "<group>"; };
+		858B843318CA22B800AB12DE /* shyft.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = shyft.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		866CCA34B22848D79AE656AF /* TNSAutoComplete.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TNSAutoComplete.framework; path = "$(SRCROOT)/../../node_modules/nativescript-pro-ui/platforms/ios/TNSAutoComplete.framework"; sourceTree = "<group>"; };
+		872BD8DD21C44FE5AA79E97C /* cloud_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cloud_icon.png; path = shyft/Resources/cloud_icon.png; sourceTree = "<group>"; };
+		87EEAE25A12B4A1DB4C981C2 /* caroil@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "caroil@2x.png"; path = "shyft/Resources/caroil@2x.png"; sourceTree = "<group>"; };
+		89D910A3667B43148DD6D8FF /* caroil@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "caroil@3x.png"; path = "shyft/Resources/caroil@3x.png"; sourceTree = "<group>"; };
+		8AF41372FDA9491F95921036 /* shyftlogo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "shyftlogo@2x.png"; path = "shyft/Resources/shyftlogo@2x.png"; sourceTree = "<group>"; };
+		8B1AF0B8386A4EA4AEF3FA6F /* circle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = circle.png; path = shyft/Resources/circle.png; sourceTree = "<group>"; };
+		8B9D28BF9C2B43138BCBC272 /* Assets.xcassets */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = unknown; name = Assets.xcassets; path = shyft/Resources/Assets.xcassets; sourceTree = "<group>"; };
+		9075562CACA94FECA98A9638 /* reddot@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "reddot@3x.png"; path = "shyft/Resources/reddot@3x.png"; sourceTree = "<group>"; };
+		9564F4F4CB11420395E97A5D /* TNSGauge.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TNSGauge.framework; path = "$(SRCROOT)/../../node_modules/nativescript-pro-ui/platforms/ios/TNSGauge.framework"; sourceTree = "<group>"; };
+		97ACB28C86764B089C8CED28 /* briefcase.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = briefcase.png; path = shyft/Resources/briefcase.png; sourceTree = "<group>"; };
+		98004724104A4D1989E5384D /* build.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = unknown; name = build.xcconfig; path = shyft/Resources/build.xcconfig; sourceTree = "<group>"; };
+		9C26F3C03D3541C0A6180303 /* caroil.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = caroil.png; path = shyft/Resources/caroil.png; sourceTree = "<group>"; };
+		A002F90C0E194549836AF6E5 /* cloud_ic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cloud_ic.png; path = shyft/Resources/cloud_ic.png; sourceTree = "<group>"; };
+		A10B361607234B2EA1288722 /* TNSWidgets.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TNSWidgets.framework; path = "$(SRCROOT)/../../node_modules/tns-core-modules-widgets/platforms/ios/TNSWidgets.framework"; sourceTree = "<group>"; };
+		A2457DD5BC7645F58B4D4180 /* filledcircle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = filledcircle.png; path = shyft/Resources/filledcircle.png; sourceTree = "<group>"; };
+		A99F9D6FF1E048E5913DDA36 /* telephone@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "telephone@2x.png"; path = "shyft/Resources/telephone@2x.png"; sourceTree = "<group>"; };
+		AEEDCBBC172F400C8FFB3E7E /* service@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "service@2x.png"; path = "shyft/Resources/service@2x.png"; sourceTree = "<group>"; };
+		AF0FD3E9A0BF454D9950AA40 /* arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = arrow.png; path = shyft/Resources/arrow.png; sourceTree = "<group>"; };
+		B46F68D0037C42B1B9D33B6A /* add.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = add.png; path = shyft/Resources/add.png; sourceTree = "<group>"; };
+		C1386170070340169F437C29 /* briefcase@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "briefcase@3x.png"; path = "shyft/Resources/briefcase@3x.png"; sourceTree = "<group>"; };
+		C3F133ACD9CE4679A025A729 /* camera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = camera.png; path = shyft/Resources/camera.png; sourceTree = "<group>"; };
+		C56EB82D8CC04AC0A4CB8B7A /* filledcircle@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "filledcircle@2x.png"; path = "shyft/Resources/filledcircle@2x.png"; sourceTree = "<group>"; };
+		C6F2EC3E621347C7B465B142 /* call@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "call@3x.png"; path = "shyft/Resources/call@3x.png"; sourceTree = "<group>"; };
+		CA978636EB4D4FC29396D3E1 /* greendot@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "greendot@3x.png"; path = "shyft/Resources/greendot@3x.png"; sourceTree = "<group>"; };
+		CAAC47FCA718445BAB26F3AB /* greendot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = greendot.png; path = shyft/Resources/greendot.png; sourceTree = "<group>"; };
+		CD45EE7A18DC2D5800FB50C0 /* app */ = {isa = PBXFileReference; lastKnownFileType = folder; path = app; sourceTree = "<group>"; };
+		CD62955C1BB2678900AE3A93 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = internal/main.m; sourceTree = SOURCE_ROOT; };
+		CDD59A261BB43B5D00EC2671 /* build-debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "build-debug.xcconfig"; sourceTree = "<group>"; };
+		CDD59A271BB43B5D00EC2671 /* build-release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "build-release.xcconfig"; sourceTree = "<group>"; };
+		CDF4743E1BA4855C0087EA85 /* build.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = build.xcconfig; sourceTree = "<group>"; };
+		D06AEDE020DE4626A2CACC7B /* TNSDataForm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TNSDataForm.framework; path = "$(SRCROOT)/../../node_modules/nativescript-pro-ui/platforms/ios/TNSDataForm.framework"; sourceTree = "<group>"; };
+		D139967A174445D08F9EBB72 /* service.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = service.png; path = shyft/Resources/service.png; sourceTree = "<group>"; };
+		D81889197656467088074840 /* cancel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cancel.png; path = shyft/Resources/cancel.png; sourceTree = "<group>"; };
+		E603A68890B0413AAF2F6BAF /* reddot@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "reddot@2x.png"; path = "shyft/Resources/reddot@2x.png"; sourceTree = "<group>"; };
+		EA48F67D8C0E4B70ACDA9932 /* user.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = user.png; path = shyft/Resources/user.png; sourceTree = "<group>"; };
+		ECAFFE39DA084AFE93F58CFC /* greendot@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "greendot@2x.png"; path = "shyft/Resources/greendot@2x.png"; sourceTree = "<group>"; };
+		ECC09CB6D6E7406E8DE3EC82 /* TNSCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TNSCore.framework; path = "$(SRCROOT)/../../node_modules/nativescript-pro-ui/platforms/ios/TNSCore.framework"; sourceTree = "<group>"; };
+		F4C138B3DD9042C392A2D732 /* line@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "line@2x.png"; path = "shyft/Resources/line@2x.png"; sourceTree = "<group>"; };
+		FAEAB66F0B474F24A707E139 /* message@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "message@3x.png"; path = "shyft/Resources/message@3x.png"; sourceTree = "<group>"; };
+		FD60439341394999BF4BA853 /* service@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "service@3x.png"; path = "shyft/Resources/service@3x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		858B83F418CA22B800AB12DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				171C64FA3B574E6284CEC425 /* TNSAutoComplete.framework in Frameworks */,
+				D9BC9ED8700E49C18CB24BEB /* TNSCalendar.framework in Frameworks */,
+				E75C44AB0624472AA13E9AE7 /* TNSChart.framework in Frameworks */,
+				3FBDD18D70224231A68DD2CC /* TNSCore.framework in Frameworks */,
+				C4E558C9C98E47EAA5E95CC4 /* TNSDataForm.framework in Frameworks */,
+				92903B3A0F634A73B50EBE9E /* TNSGauge.framework in Frameworks */,
+				A5224D2367A444E0A52CEE3A /* TNSListView.framework in Frameworks */,
+				41D19C7AC30B47B6B4E7D403 /* TNSSideDrawer.framework in Frameworks */,
+				7C4B91A15C6E4D6FAD35E250 /* TelerikAppFeedback.framework in Frameworks */,
+				E3B9AAB57C114CD1AE481146 /* TNSWidgets.framework in Frameworks */,
+				74F87682CF281E84A2DD22EF /* Pods_shyft.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		50D307B9B0401D1DB821BC0C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		858B832518CA111C00AB12DE = {
+			isa = PBXGroup;
+			children = (
+				E070579D1B39A9D000214BF1 /* Resources */,
+				858B833718CA111C00AB12DE /* shyft */,
+				858B833018CA111C00AB12DE /* Frameworks */,
+				858B832F18CA111C00AB12DE /* Products */,
+				50D307B9B0401D1DB821BC0C /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		858B832F18CA111C00AB12DE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				858B832E18CA111C00AB12DE /* shyft.app */,
+				858B843318CA22B800AB12DE /* shyft.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		858B833018CA111C00AB12DE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				866CCA34B22848D79AE656AF /* TNSAutoComplete.framework */,
+				3C6BD8FE838E428BA6DD2BE9 /* TNSCalendar.framework */,
+				66B265B9D6514E96B7A9BAB7 /* TNSChart.framework */,
+				ECC09CB6D6E7406E8DE3EC82 /* TNSCore.framework */,
+				D06AEDE020DE4626A2CACC7B /* TNSDataForm.framework */,
+				9564F4F4CB11420395E97A5D /* TNSGauge.framework */,
+				17FDCC3386C946128E40F02E /* TNSListView.framework */,
+				6D7C4F5FB6C84322A9F58E3B /* TNSSideDrawer.framework */,
+				6DC97E35B32D4B05BA79D57D /* TelerikAppFeedback.framework */,
+				A10B361607234B2EA1288722 /* TNSWidgets.framework */,
+				6F421E3474E170D41809278C /* Pods_shyft.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		858B833718CA111C00AB12DE /* shyft */ = {
+			isa = PBXGroup;
+			children = (
+				CD45EE7A18DC2D5800FB50C0 /* app */,
+				858B833818CA111C00AB12DE /* Supporting Files */,
+			);
+			path = shyft;
+			sourceTree = "<group>";
+		};
+		858B833818CA111C00AB12DE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CDF4743E1BA4855C0087EA85 /* build.xcconfig */,
+				CDD59A261BB43B5D00EC2671 /* build-debug.xcconfig */,
+				CDD59A271BB43B5D00EC2671 /* build-release.xcconfig */,
+				858B833918CA111C00AB12DE /* shyft-Info.plist */,
+				858B833A18CA111C00AB12DE /* InfoPlist.strings */,
+				CD62955C1BB2678900AE3A93 /* main.m */,
+				858B833F18CA111C00AB12DE /* shyft-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E070579D1B39A9D000214BF1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8B9D28BF9C2B43138BCBC272 /* Assets.xcassets */,
+				52E79F2D6C2545FDAC756126 /* LaunchScreen.storyboard */,
+				B46F68D0037C42B1B9D33B6A /* add.png */,
+				AF0FD3E9A0BF454D9950AA40 /* arrow.png */,
+				750470993FBC4D3B8E7FF326 /* back.png */,
+				97ACB28C86764B089C8CED28 /* briefcase.png */,
+				074E5ACA1AAB419DB74D09B1 /* briefcase@2x.png */,
+				C1386170070340169F437C29 /* briefcase@3x.png */,
+				98004724104A4D1989E5384D /* build.xcconfig */,
+				55040630F6014B7C9729C483 /* calendar.png */,
+				12A3907CC5C64587BF978F0A /* calendar@2x.png */,
+				25B895A772C34588912BE434 /* calendar@3x.png */,
+				3629ECA8BE5048AEB284F533 /* call.png */,
+				35B89910C0844FADB9080D33 /* call@2x.png */,
+				C6F2EC3E621347C7B465B142 /* call@3x.png */,
+				C3F133ACD9CE4679A025A729 /* camera.png */,
+				D81889197656467088074840 /* cancel.png */,
+				3BFED7B7D0484BC7911905F5 /* cancel@2x.png */,
+				68CE82E6611945C895204929 /* cancel@3x.png */,
+				812900DCD9D44FD48DC36D98 /* car.png */,
+				9C26F3C03D3541C0A6180303 /* caroil.png */,
+				87EEAE25A12B4A1DB4C981C2 /* caroil@2x.png */,
+				89D910A3667B43148DD6D8FF /* caroil@3x.png */,
+				8B1AF0B8386A4EA4AEF3FA6F /* circle.png */,
+				09EEBBCAEB1E4969BA9E9264 /* circle@2x.png */,
+				5A81539A5FF14DC0886087B3 /* circle@3x.png */,
+				A002F90C0E194549836AF6E5 /* cloud_ic.png */,
+				872BD8DD21C44FE5AA79E97C /* cloud_icon.png */,
+				21B4C025EF1246FFBDD00EAE /* dots.png */,
+				508D908708C349468C394485 /* drawer.png */,
+				A2457DD5BC7645F58B4D4180 /* filledcircle.png */,
+				C56EB82D8CC04AC0A4CB8B7A /* filledcircle@2x.png */,
+				4BD025B6377F4696881B2181 /* filledcircle@3x.png */,
+				CAAC47FCA718445BAB26F3AB /* greendot.png */,
+				ECAFFE39DA084AFE93F58CFC /* greendot@2x.png */,
+				CA978636EB4D4FC29396D3E1 /* greendot@3x.png */,
+				81111B804E8F461EA553255E /* house.png */,
+				6105EDD448B54FC3B8E04FC6 /* house@2x.png */,
+				5C2DC96077E74F7A8CB6AC3D /* house@3x.png */,
+				7CAE62E02FFE47EE95005239 /* line.png */,
+				F4C138B3DD9042C392A2D732 /* line@2x.png */,
+				4A0D9824F886429D806D3718 /* line@3x.png */,
+				6083201CE62B4BDDBDF5E2CB /* logo_2.png */,
+				719EDEFF8DA44407BFF6E8A3 /* marker.png */,
+				6009A37F689A497F88FB6635 /* message.png */,
+				07D0385B067C444F873CEC94 /* message@2x.png */,
+				FAEAB66F0B474F24A707E139 /* message@3x.png */,
+				7CFB36489CF14D42B7FC988C /* navigation */,
+				708DE34C360D47C89A8DC1D4 /* reddot.png */,
+				E603A68890B0413AAF2F6BAF /* reddot@2x.png */,
+				9075562CACA94FECA98A9638 /* reddot@3x.png */,
+				D139967A174445D08F9EBB72 /* service.png */,
+				AEEDCBBC172F400C8FFB3E7E /* service@2x.png */,
+				FD60439341394999BF4BA853 /* service@3x.png */,
+				0BE4E044F62F4181B68BAA67 /* shyftlogo.png */,
+				8AF41372FDA9491F95921036 /* shyftlogo@2x.png */,
+				766BFA548B574437B3082169 /* shyftlogo@3x.png */,
+				2B9B36630DD3441BB2540037 /* statuscar.png */,
+				33C32D9869C34E74B092D0F2 /* statuscar@2x.png */,
+				79DEF5C30A8C4E7E9240F095 /* statuscar@3x.png */,
+				7D16066248BE441FAEAB98EB /* telephone.png */,
+				A99F9D6FF1E048E5913DDA36 /* telephone@2x.png */,
+				0B7049D9AA9C46D5AAFDF934 /* telephone@3x.png */,
+				5BE9FFDE99894AA19F2F7AC6 /* upload.png */,
+				088D5C78D6634CBBBCDFD575 /* upload@2x.png */,
+				4742BFCA178E40148B2BBBF1 /* upload@3x.png */,
+				EA48F67D8C0E4B70ACDA9932 /* user.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		858B83EF18CA22B800AB12DE /* shyft */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 858B843018CA22B800AB12DE /* Build configuration list for PBXNativeTarget "shyft" */;
+			buildPhases = (
+				633304E56F5C289BED19F7DA /* [CP] Check Pods Manifest.lock */,
+				C97FD7AC1ADE5369004DB2A4 /* NativeScript PreBuild */,
+				858B83F218CA22B800AB12DE /* Sources */,
+				CD62955B1BB2651D00AE3A93 /* NativeScript PreLink */,
+				858B83F418CA22B800AB12DE /* Frameworks */,
+				858B842C18CA22B800AB12DE /* Resources */,
+				85F5BDFC1A9363BE006B9701 /* Embed Frameworks */,
+				CD3EAD351B05FF060042DBFC /* NativeScript PostBuild */,
+				099FCD2F0C1DCB718D129091 /* [CP] Embed Pods Frameworks */,
+				2254BA478B58A2CB2500CCC7 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = shyft;
+			productName = JDBridgeApp;
+			productReference = 858B843318CA22B800AB12DE /* shyft.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		858B832618CA111C00AB12DE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = TNS;
+				LastUpgradeCheck = 500;
+				ORGANIZATIONNAME = Telerik;
+			};
+			buildConfigurationList = 858B832918CA111C00AB12DE /* Build configuration list for PBXProject "shyft" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 858B832518CA111C00AB12DE;
+			productRefGroup = 858B832F18CA111C00AB12DE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				858B83EF18CA22B800AB12DE /* shyft */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		858B842C18CA22B800AB12DE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD45EE7C18DC2D5800FB50C0 /* app in Resources */,
+				858B842D18CA22B800AB12DE /* InfoPlist.strings in Resources */,
+				EBC972E046EC4968BB3ECB1B /* Assets.xcassets in Resources */,
+				8BC9D02BB74A4CD0A8843F57 /* LaunchScreen.storyboard in Resources */,
+				690E15344AD74FCDB3E44516 /* add.png in Resources */,
+				4A495EF924E24326A945102E /* arrow.png in Resources */,
+				80C5856BD647496B96C7BFEA /* back.png in Resources */,
+				63D3B459EB1F45C298DACCF3 /* briefcase.png in Resources */,
+				B6531C1363C74FE29A249AC6 /* briefcase@2x.png in Resources */,
+				FD0E281E5172477DABEC1C83 /* briefcase@3x.png in Resources */,
+				7DAF485A3C3E401195CF58CE /* build.xcconfig in Resources */,
+				C6AC6EFE54F44C0CB565C0D2 /* calendar.png in Resources */,
+				89888E21EB0D4DFBB70186E3 /* calendar@2x.png in Resources */,
+				BBF8C1D23CC64B7E80185EFE /* calendar@3x.png in Resources */,
+				959B7848F0964246B2066ACE /* call.png in Resources */,
+				E61EEDFA12A040DA9692FC2E /* call@2x.png in Resources */,
+				0AC3716AAAE34AA8BF2A6C09 /* call@3x.png in Resources */,
+				857FFA31D87D47DCB37CF62C /* camera.png in Resources */,
+				54A49F9D00904B5DA95AA93E /* cancel.png in Resources */,
+				0D1049B0A48F4DC39E7A31F8 /* cancel@2x.png in Resources */,
+				4174C1FFAC6E4F9AA7E24639 /* cancel@3x.png in Resources */,
+				E549B17865644B1BA3065722 /* car.png in Resources */,
+				F0EFE6DF6258402DB9522F88 /* caroil.png in Resources */,
+				69F5D8DFCDD54CFCA56BB8C3 /* caroil@2x.png in Resources */,
+				3632488E91B941E891D5A7D5 /* caroil@3x.png in Resources */,
+				6D958676A7184A3780051909 /* circle.png in Resources */,
+				20995D1B1CE6441FBC797B68 /* circle@2x.png in Resources */,
+				D9D742706F9844E9853F3149 /* circle@3x.png in Resources */,
+				1F8D8D10C5CA4E8D8A91EDBD /* cloud_ic.png in Resources */,
+				04150FCFA3854C319FDF4116 /* cloud_icon.png in Resources */,
+				6BCF713AEA3E48478C920E05 /* dots.png in Resources */,
+				FB67680D50504221B8DF52C1 /* drawer.png in Resources */,
+				9CD5943B340848109B8AEFCE /* filledcircle.png in Resources */,
+				39A0BD11EF0D43F88B957C53 /* filledcircle@2x.png in Resources */,
+				3EC4B4A696E94533840D703E /* filledcircle@3x.png in Resources */,
+				A78AB26EA6554CC68ED41194 /* greendot.png in Resources */,
+				9F8AD013DBD84E5CAE4DF5C5 /* greendot@2x.png in Resources */,
+				185A7282D3F34196B59C5F05 /* greendot@3x.png in Resources */,
+				019C40F1770E4AEC9E87BD8F /* house.png in Resources */,
+				F9247C5E35014697BAC816B4 /* house@2x.png in Resources */,
+				9E213516AC5B4AB49E9BB77E /* house@3x.png in Resources */,
+				AD089A0005FC4B23ADCA9494 /* line.png in Resources */,
+				D54B5F56065545A5A17B27F2 /* line@2x.png in Resources */,
+				BCC48A7B194341DF9BEAD87D /* line@3x.png in Resources */,
+				FF905F3205C74E33A27E12CB /* logo_2.png in Resources */,
+				EADC9398FB994C6F899166AB /* marker.png in Resources */,
+				77533C369A044FE9B7316EBA /* message.png in Resources */,
+				6F960BCA40844396B2B66451 /* message@2x.png in Resources */,
+				BBF71D3DEBCA4E119088D091 /* message@3x.png in Resources */,
+				76306547F03643F0842C0910 /* navigation in Resources */,
+				5D9FB7E520424CF384E69AE4 /* reddot.png in Resources */,
+				D946736B5E6A48B8BF6C2B3C /* reddot@2x.png in Resources */,
+				3801585F480D4CCEB5D74CA4 /* reddot@3x.png in Resources */,
+				D5DA0939CB874CC2A501A577 /* service.png in Resources */,
+				1D838A0CE9934326A6060F56 /* service@2x.png in Resources */,
+				F1285F06898C4FA59E7531C9 /* service@3x.png in Resources */,
+				614361C350984D8E97C2B0AF /* shyftlogo.png in Resources */,
+				6E898E756DAF40A1B5F7D248 /* shyftlogo@2x.png in Resources */,
+				26FB266D21AE460CB65581D1 /* shyftlogo@3x.png in Resources */,
+				5DA71A15535F4D7881A94D6C /* statuscar.png in Resources */,
+				A9D2B0352D86404BB556AD9F /* statuscar@2x.png in Resources */,
+				C8DDC47FDC5A4B37B037A473 /* statuscar@3x.png in Resources */,
+				559A70C8AE2C4A538DF17CD8 /* telephone.png in Resources */,
+				973B8399995C48CA8394360D /* telephone@2x.png in Resources */,
+				371B09FA3AF64E80A899DD71 /* telephone@3x.png in Resources */,
+				B02997E3463746D797EB6861 /* upload.png in Resources */,
+				0010D14954DC468AB31F3AE7 /* upload@2x.png in Resources */,
+				B1E6F9ACA1B94051802B97CC /* upload@3x.png in Resources */,
+				382D7DE236EF44468D1292E8 /* user.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		099FCD2F0C1DCB718D129091 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-shyft/Pods-shyft-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BEMCheckBox/BEMCheckBox.framework",
+				"${BUILT_PRODUCTS_DIR}/Braintree/Braintree.framework",
+				"${BUILT_PRODUCTS_DIR}/BraintreeDropIn/BraintreeDropIn.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManager/IQKeyboardManager.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+				"${PODS_ROOT}/Mapbox-iOS-SDK/dynamic/Mapbox.framework",
+				"${PODS_ROOT}/Mapbox-iOS-SDK/dynamic/Mapbox.framework.dSYM",
+				"${BUILT_PRODUCTS_DIR}/PocketSocket/PocketSocket.framework",
+				"${BUILT_PRODUCTS_DIR}/SCLAlertView-Objective-C/SCLAlertView_Objective_C.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BEMCheckBox.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Braintree.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BraintreeDropIn.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManager.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Mapbox.framework",
+				"${DWARF_DSYM_FOLDER_PATH}/Mapbox.framework.dSYM",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PocketSocket.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SCLAlertView_Objective_C.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-shyft/Pods-shyft-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2254BA478B58A2CB2500CCC7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-shyft/Pods-shyft-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		633304E56F5C289BED19F7DA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-shyft-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C97FD7AC1ADE5369004DB2A4 /* NativeScript PreBuild */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "NativeScript PreBuild";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$SRCROOT/internal/nativescript-pre-build\"";
+			showEnvVarsInLog = 0;
+		};
+		CD3EAD351B05FF060042DBFC /* NativeScript PostBuild */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "NativeScript PostBuild";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$SRCROOT/internal/nativescript-post-build\"";
+			showEnvVarsInLog = 0;
+		};
+		CD62955B1BB2651D00AE3A93 /* NativeScript PreLink */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "NativeScript PreLink";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$SRCROOT/internal/nativescript-pre-link\"";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		858B83F218CA22B800AB12DE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD62955D1BB2678900AE3A93 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		858B833A18CA111C00AB12DE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				858B833B18CA111C00AB12DE /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		858B835818CA111C00AB12DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "armv7 arm64";
+			};
+			name = Debug;
+		};
+		858B835918CA111C00AB12DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = "armv7 arm64";
+			};
+			name = Release;
+		};
+		858B843118CA22B800AB12DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CDD59A261BB43B5D00EC2671 /* build-debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_ENABLE_MODULES = NO;
+				CLANG_MODULES_AUTOLINK = NO;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../node_modules/nativescript-pro-ui/platforms/ios\"",
+					"\"$(SRCROOT)/../../node_modules/nativescript-pro-ui/platforms/ios\"",
+					"\"$(SRCROOT)/../../node_modules/nativescript-pro-ui/platforms/ios\"",
+					"\"$(SRCROOT)/../../node_modules/nativescript-pro-ui/platforms/ios\"",
+					"\"$(SRCROOT)/../../node_modules/nativescript-pro-ui/platforms/ios\"",
+					"\"$(SRCROOT)/../../node_modules/nativescript-pro-ui/platforms/ios\"",
+					"\"$(SRCROOT)/../../node_modules/nativescript-pro-ui/platforms/ios\"",
+					"\"$(SRCROOT)/../../node_modules/nativescript-pro-ui/platforms/ios\"",
+					"\"$(SRCROOT)/../../node_modules/nativescript-pro-ui/platforms/ios\"",
+					"\"$(SRCROOT)/../../node_modules/tns-core-modules-widgets/platforms/ios\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "shyft/shyft-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/shyft/shyft-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = shyft;
+				VALID_ARCHS = "armv7 arm64";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		858B843218CA22B800AB12DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CDD59A271BB43B5D00EC2671 /* build-release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_ENABLE_MODULES = NO;
+				CLANG_MODULES_AUTOLINK = NO;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../node_modules/nativescript-pro-ui/platforms/ios\"",
+					"\"$(SRCROOT)/../../node_modules/nativescript-pro-ui/platforms/ios\"",
+					"\"$(SRCROOT)/../../node_modules/nativescript-pro-ui/platforms/ios\"",
+					"\"$(SRCROOT)/../../node_modules/nativescript-pro-ui/platforms/ios\"",
+					"\"$(SRCROOT)/../../node_modules/nativescript-pro-ui/platforms/ios\"",
+					"\"$(SRCROOT)/../../node_modules/nativescript-pro-ui/platforms/ios\"",
+					"\"$(SRCROOT)/../../node_modules/nativescript-pro-ui/platforms/ios\"",
+					"\"$(SRCROOT)/../../node_modules/nativescript-pro-ui/platforms/ios\"",
+					"\"$(SRCROOT)/../../node_modules/nativescript-pro-ui/platforms/ios\"",
+					"\"$(SRCROOT)/../../node_modules/tns-core-modules-widgets/platforms/ios\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "shyft/shyft-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/shyft/shyft-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = shyft;
+				VALID_ARCHS = "armv7 arm64";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		858B832918CA111C00AB12DE /* Build configuration list for PBXProject "shyft" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				858B835818CA111C00AB12DE /* Debug */,
+				858B835918CA111C00AB12DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		858B843018CA22B800AB12DE /* Build configuration list for PBXNativeTarget "shyft" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				858B843118CA22B800AB12DE /* Debug */,
+				858B843218CA22B800AB12DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 858B832618CA111C00AB12DE /* Project object */;
+}

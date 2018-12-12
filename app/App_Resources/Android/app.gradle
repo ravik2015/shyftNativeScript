@@ -1,0 +1,42 @@
+// Add your native dependencies here:
+
+// Uncomment to add recyclerview-v7 dependency
+//dependencies {
+//	compile 'com.android.support:recyclerview-v7:+'
+//}
+
+// android {  
+//   defaultConfig {  
+//     generatedDensities = []
+//     applicationId = "com.futuredms.shyft"  
+//   }  
+//   aaptOptions {  
+//     additionalParameters "--no-version-vectors"  
+//   }  
+// } 
+
+
+
+allprojects {
+    repositories {
+        jcenter()
+        maven {
+            url 'https://maven.google.com'
+        }
+    }
+}
+android {  
+  defaultConfig {  
+    generatedDensities = []
+    applicationId = "com.futuredms.shyft"  
+  }  
+  aaptOptions {  
+    additionalParameters "--no-version-vectors"  
+  }
+  dependencies {
+	compile 'com.braintreepayments.api:drop-in:3.+'
+  }
+  compileSdkVersion 26
+  buildToolsVersion "26.0.1"
+} 
+

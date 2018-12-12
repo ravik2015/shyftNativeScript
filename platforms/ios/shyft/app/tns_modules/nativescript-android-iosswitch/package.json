@@ -1,0 +1,78 @@
+{
+  "_from": "nativescript-android-iosswitch@^1.0.0",
+  "_id": "nativescript-android-iosswitch@1.0.0",
+  "_inBundle": false,
+  "_integrity": "sha1-CMHloG4Coa9bB/cz+9Ti220DJQY=",
+  "_location": "/nativescript-android-iosswitch",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "nativescript-android-iosswitch@^1.0.0",
+    "name": "nativescript-android-iosswitch",
+    "escapedName": "nativescript-android-iosswitch",
+    "rawSpec": "^1.0.0",
+    "saveSpec": null,
+    "fetchSpec": "^1.0.0"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/nativescript-android-iosswitch/-/nativescript-android-iosswitch-1.0.0.tgz",
+  "_shasum": "08c1e5a06e02a1af5b07f733fbd4e2db6d032506",
+  "_spec": "nativescript-android-iosswitch@^1.0.0",
+  "_where": "/Users/saurabh.chauhan/Desktop/shyft",
+  "author": {
+    "name": "Ravindra Mishra",
+    "email": "jackravi227@gmail.com"
+  },
+  "bugs": {
+    "url": "https://github.com/dlucidone/nativescript-android-iosswitch/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "A lightweight iOS switch view style for Android",
+  "devDependencies": {
+    "prompt": "^1.0.0",
+    "rimraf": "^2.5.0",
+    "tns-core-modules": "^2.5.1",
+    "tns-platform-declarations": "^2.5.0",
+    "typescript": "^2.1.0"
+  },
+  "homepage": "https://github.com/dlucidone/nativescript-android-iosswitch",
+  "keywords": [
+    "NativeScript",
+    "JavaScript",
+    "Android",
+    "switch",
+    "button",
+    "ios switch",
+    "dlucidone"
+  ],
+  "license": "MIT",
+  "main": "android-iosswitch",
+  "name": "nativescript-android-iosswitch",
+  "nativescript": {
+    "platforms": {
+      "android": "2.5.0"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dlucidone/nativescript-android-iosswitch.git"
+  },
+  "scripts": {
+    "build": "tsc",
+    "demo.android": "npm run preparedemo && cd demo && tns run android --emulator",
+    "demo.ios": "npm run preparedemo && cd demo && tns run ios --emulator",
+    "demo.ios.device": "npm run preparedemo && cd demo && tns run ios",
+    "postclone": "npm i && node scripts/postclone.js",
+    "preparedemo": "npm run build && cd demo && tns plugin remove nativescript-submit-button && tns plugin add .. && tns install",
+    "setup": "npm i && cd demo && npm i && cd .. && npm run build && cd demo && tns plugin add .. && cd ..",
+    "test.android": "cd demo && tns test android",
+    "test.ios": "cd demo && tns test ios --emulator",
+    "test.ios.device": "cd demo && tns test ios"
+  },
+  "typings": "index.d.ts",
+  "version": "1.0.0"
+}

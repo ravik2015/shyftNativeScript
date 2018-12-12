@@ -1,0 +1,106 @@
+[
+    {
+        "name": "nativescript-accordion",
+        "directory": "../../node_modules/nativescript-accordion"
+    },
+    {
+        "name": "nativescript-android-iosswitch",
+        "directory": "../../node_modules/nativescript-android-iosswitch"
+    },
+    {
+        "name": "nativescript-angular",
+        "directory": "../../node_modules/nativescript-angular"
+    },
+    {
+        "name": "nativescript-background-http",
+        "directory": "../../node_modules/nativescript-background-http"
+    },
+    {
+        "name": "nativescript-braintree",
+        "directory": "../../node_modules/nativescript-braintree"
+    },
+    {
+        "name": "nativescript-checkbox",
+        "directory": "../../node_modules/nativescript-checkbox"
+    },
+    {
+        "name": "nativescript-directions",
+        "directory": "../../node_modules/nativescript-directions"
+    },
+    {
+        "name": "nativescript-fancyalert",
+        "directory": "../../node_modules/nativescript-fancyalert"
+    },
+    {
+        "name": "nativescript-filter-select",
+        "directory": "../../node_modules/nativescript-filter-select"
+    },
+    {
+        "name": "nativescript-geolocation",
+        "directory": "../../node_modules/nativescript-geolocation"
+    },
+    {
+        "name": "nativescript-imagepicker",
+        "directory": "../../node_modules/nativescript-imagepicker"
+    },
+    {
+        "name": "nativescript-iqkeyboardmanager",
+        "directory": "../../node_modules/nativescript-iqkeyboardmanager"
+    },
+    {
+        "name": "nativescript-loading-indicator",
+        "directory": "../../node_modules/nativescript-loading-indicator"
+    },
+    {
+        "name": "nativescript-localstorage",
+        "directory": "../../node_modules/nativescript-localstorage"
+    },
+    {
+        "name": "nativescript-mapbox",
+        "directory": "../../node_modules/nativescript-mapbox"
+    },
+    {
+        "name": "nativescript-mqtt",
+        "directory": "../../node_modules/nativescript-mqtt"
+    },
+    {
+        "name": "nativescript-phone",
+        "directory": "../../node_modules/nativescript-phone"
+    },
+    {
+        "name": "nativescript-pro-ui",
+        "directory": "../../node_modules/nativescript-pro-ui"
+    },
+    {
+        "name": "nativescript-theme-core",
+        "directory": "../../node_modules/nativescript-theme-core"
+    },
+    {
+        "name": "nativescript-websockets",
+        "directory": "../../node_modules/nativescript-websockets"
+    },
+    {
+        "name": "nativescript-webview-interface",
+        "directory": "../../node_modules/nativescript-webview-interface"
+    },
+    {
+        "name": "tns-core-modules",
+        "directory": "../../node_modules/tns-core-modules"
+    },
+    {
+        "name": "nativescript-intl",
+        "directory": "../../node_modules/nativescript-intl"
+    },
+    {
+        "name": "nativescript-appavailability",
+        "directory": "../../node_modules/nativescript-appavailability"
+    },
+    {
+        "name": "nativescript-permissions",
+        "directory": "../../node_modules/nativescript-permissions"
+    },
+    {
+        "name": "tns-core-modules-widgets",
+        "directory": "../../node_modules/tns-core-modules-widgets"
+    }
+]

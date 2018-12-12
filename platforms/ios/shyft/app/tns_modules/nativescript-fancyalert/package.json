@@ -1,0 +1,92 @@
+{
+  "_from": "nativescript-fancyalert@^1.1.2",
+  "_id": "nativescript-fancyalert@1.2.0",
+  "_inBundle": false,
+  "_integrity": "sha512-fV/FOwXB5BbX67OBAa3uDniRbeVR6BcMBUV66cYScWTOJdAfjeTf+jSphU1c61U5hVVVVM+0u3lYBywMBA/YMw==",
+  "_location": "/nativescript-fancyalert",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "nativescript-fancyalert@^1.1.2",
+    "name": "nativescript-fancyalert",
+    "escapedName": "nativescript-fancyalert",
+    "rawSpec": "^1.1.2",
+    "saveSpec": null,
+    "fetchSpec": "^1.1.2"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/nativescript-fancyalert/-/nativescript-fancyalert-1.2.0.tgz",
+  "_shasum": "15f0bed384272dd2b84bfd906b2fa0b0c3bf4c24",
+  "_spec": "nativescript-fancyalert@^1.1.2",
+  "_where": "/Users/saurabh.chauhan/Desktop/shyft",
+  "author": {
+    "name": "Nathan Walker",
+    "email": "walkerrunpdx@gmail.com"
+  },
+  "bugs": {
+    "url": "https://github.com/NathanWalker/nativescript-fancyalert/issues"
+  },
+  "bundleDependencies": false,
+  "contributors": [
+    {
+      "name": "Brad Martin",
+      "email": "bradwaynemartin@gmail.com",
+      "url": "https://github.com/bradmartin"
+    }
+  ],
+  "dependencies": {
+    "typescript": "^2.0.7"
+  },
+  "deprecated": false,
+  "description": "Fancy alerts for NativeScript.",
+  "devDependencies": {
+    "husky": "^0.13.4",
+    "lint-staged": "^3.6.1",
+    "prettier": "^1.4.4",
+    "tns-core-modules": "^3.1.1",
+    "tns-platform-declarations": "^3.1.1"
+  },
+  "homepage": "https://github.com/NathanWalker/nativescript-fancyalert",
+  "keywords": [
+    "NativeScript",
+    "iOS",
+    "Android",
+    "alert",
+    "dialogs"
+  ],
+  "license": {
+    "type": "MIT",
+    "url": "https://github.com/NathanWalker/nativescript-fancyalert/blob/master/LICENSE"
+  },
+  "lint-staged": {
+    "*.ts": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "main": "fancyalert",
+  "name": "nativescript-fancyalert",
+  "nativescript": {
+    "platforms": {
+      "ios": "2.4.0",
+      "android": "2.4.0"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NathanWalker/nativescript-fancyalert.git"
+  },
+  "scripts": {
+    "build": "tsc",
+    "demo.android": "npm run preparedemo && cd demo && tns run android",
+    "demo.ios": "npm run preparedemo && cd demo && tns emulate ios",
+    "precommit": "lint-staged",
+    "preparedemo": "npm run build && cd demo && tns plugin remove nativescript-fancyalert && tns plugin add .. && tns install",
+    "setup": "npm i && cd demo && npm install && cd .. && npm run build && cd demo && tns plugin add .. && cd .."
+  },
+  "typings": "index.d.ts",
+  "version": "1.2.0"
+}

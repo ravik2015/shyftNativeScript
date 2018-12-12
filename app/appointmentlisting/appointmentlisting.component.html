@@ -1,0 +1,30 @@
+
+<GridLayout columns="*" rows="*,9*">
+        <StackLayout col="0" row="0" style="background-color: black" >
+                <GridLayout columns="*,8*,*" rows="*">
+                                <StackLayout col="0" row="0">
+                                         <Label class="h2 fa" text="&#xf060;" (onTap)="onBack()" style="horizontal-align: left; color: white; padding: 20 0 0 10 "></Label>     
+                                </StackLayout>
+                                <StackLayout col="1" row="0" style="vertical-align: center">
+                                        <Label class="h2" text="Service History"  style=" color: white; text-align: center"></Label>                                                                                                                                                                             
+                                </StackLayout>
+                                <StackLayout col="2" row="0"></StackLayout>                                        
+                </GridLayout>                                        
+        </StackLayout>  
+        <ListView  col="0" row="1" [visibility]="!datastate ? 'visible' : 'collapsed'" [items]="appointments">
+                <ng-template tkListItemTemplate let-item="item" let-index="index">
+                        <Gridlayout columns="8*,2*" rows="*" style="padding: 10;" (onTap)="itemTapped(args, item, index)">
+                                <StackLayout col="0" row="0">
+                                        <Label [text]="'Serviced at : '+item?.vendor?.name" style="color: black; text-align: left"></Label>
+                                        <Label [text]="item?.datetime" style="color: black; text-align: left"></Label>
+                                </StackLayout>
+                                <StackLayout col="1" row="0">
+                                        <Label class="h3 fa" [text]="item?.status" [ngClass]="{'my-class': item?.status == 'pending','my-class': item?.status == 'Pending', 'default': item?.status == 'active', 'default2': item?.status == 'Lead', 'default2': item?.status == 'Paid'}"></Label>
+                                </StackLayout>
+                        </Gridlayout>
+        </ng-template>
+        </ListView>  
+        <ActivityIndicator column=0 row=1 [busy]="datastate" width="100" height="100" class="activity-indicator"></ActivityIndicator>                        
+ 
+</GridLayout>
+    

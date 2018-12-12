@@ -1,0 +1,51 @@
+<GridLayout cols="*" rows="*,7*,2*">
+    <StackLayout col=0 row=0>
+    </StackLayout>
+    <StackLayout col=0 row=1>
+            <GridLayout cols="*" rows="4*,5*,*">
+                    <StackLayout col=0 row=0>
+                            <GridLayout cols="*,*,*" rows="*">
+                                    <StackLayout col=0 row=0></StackLayout>
+                                    <StackLayout col=1 row=0>
+                                            <GridLayout cols="*" rows="3*,4*,3*" style="horizontal-align: center;">
+                                                    <StackLayout col=0 row=0 style="horizontal-align: center; vertical-align: center;">
+                                                            <Label class="h1" text="Shyft" style="text-align: center; horizontal-align: center;"></Label>
+                                                    </StackLayout>
+                                                    <StackLayout col=0 row=1>
+                                                            <Image src="res://cloud_icon"></Image>
+                                                    </StackLayout>
+                                                    <StackLayout col=0 row=2 style="horizontal-align: center; vertical-align: center;">
+                                                            <Label class="h5" text="By Kloud DMS"></Label>
+                                                    </StackLayout>
+                                            </GridLayout>
+                                    </StackLayout>
+                                    <StackLayout col=2 row=0></StackLayout>
+                            </GridLayout>
+                    </StackLayout>
+                    <StackLayout col=0 row=1>
+                            <GridLayout cols="*" rows="*,*" >
+                                    <StackLayout col=0 row=0 style="vertical-align: center;" [visibility]="!this.loginstate ? 'visible' : 'collapsed'">
+                                            <StackLayout orientation="horizontal">
+                                                    <Image [visibility]="this.state ? 'visible' : 'collapsed'" src="res://logo_2" style="height: 55; width: 55;margin-left: 15"></Image>
+                                                    <Label class="h2" [text]="this?.username" textWrap="true" style="padding-left: 15; vertical-align: center;" (tap)="login()"></Label>
+                                            </StackLayout>
+                                    </StackLayout>
+                                    <ActivityIndicator col=0 row=0 [busy]="loginstate" class="activity-indicator"></ActivityIndicator>                                                        
+                                    <StackLayout col=0 row=1>
+                                            <StackLayout orientation="horizontal" >
+                                                    <Image src="res://add" style="height: 55; width: 55;margin-left: 15"></Image>
+                                                    <Label class="h2" text="Login to another account" textWrap="true" style="padding-left: 15; vertical-align: center;" (tap)="awsLogin()"></Label>
+                                            </StackLayout>
+                                    </StackLayout>
+                            </GridLayout>
+
+                    </StackLayout>
+                    <StackLayout col=0 row=2>
+
+                    </StackLayout>
+            </GridLayout>
+    </StackLayout>
+    <StackLayout col=0 row=2 style="vertical-align: center;">
+            <Button text="CREATE NEW SHYFT ACCOUNT" style="padding: 20" (tap)="awsSignup()"></Button>
+    </StackLayout>
+</GridLayout>

@@ -1,0 +1,48 @@
+<GridLayout columns="*" rows="*,8*,*" >
+        <StackLayout col="0" row="0" style="background-color: dodgerblue" >
+                        <GridLayout columns="*,8*,*" rows="*">
+                                        <StackLayout col="0" row="0">
+                                                <Label class="h2 fa" text="&#xf053;" (onTap)="close()" style="horizontal-align: left; color: white; padding: 30 0 0 10 "></Label>                                                             
+                                        </StackLayout>
+                                        <StackLayout col="1" row="0">
+                                                        <Label  [text]='"Welcome, "+user'  style=" color: white; text-align: center"></Label>                                                                                                                     
+                                                        <Label class="h2" text="Select Your Vehicle"  style=" color: white; text-align: center"></Label>                                                                                                                                                                             
+                                        </StackLayout>
+                                        <StackLayout col="2" row="0">
+                                                <Label class="h2 fa" text="&#xf067;" (onTap)="addCar()" style=" color: white; padding: 20 0 0 10 "></Label>                                                                                                                     
+                                        </StackLayout>                                        
+                        </GridLayout>                                        
+        </StackLayout>
+                <RadListView col="0" row="1" [items]="vehicles" (itemTap)="onVehicleTap($event)">
+                        <ng-template tkListItemTemplate let-item="item">
+                        <GridLayout>
+                                <GridLayout columns="4*,6*" rows="*" orientation="horizontal" style="border-width: 2; border-color: black">
+                                        <StackLayout col="0" row="0" style="border-width: 1; border-color: #dadada">
+                                                <Image [src]="'https://s3.amazonaws.com/img.futuredms.com/vehicle/user/'+item?.image"  style="horizontal-align: center; height: 100; width: 100;"></Image>                                                                        
+                                        </StackLayout>
+                                        <AbsoluteLayout width="45" height="45" backgroundColor="black" style="border-width: 1; border-radius: 50; margin-left: 165">
+                                                <Label class="fa" text="&#xf1b9;" style="color: white; font-weight: bold; margin: 10 0 0 10"></Label>                                                                                                                                                
+                                        </AbsoluteLayout>
+                                        <StackLayout col="1" row="0" style=" vertical-align: center;">
+                                                <Label  [text]='item?.year+" "+item?.make+" "+item?.model' textWrap="true" style="text-align: center; font-weight: bold; margin-left: 20"></Label>
+                                                <Label  [text]='"MILES: "+item?.miles' textWrap="true" style="text-align: center; font-weight: bold"></Label>  
+                                        </StackLayout>
+                                </GridLayout>
+                        </GridLayout>
+                        </ng-template>
+                </RadListView>
+        <StackLayout col="0" row="1" style="vertical-align: center">
+                <ActivityIndicator #activityIndicator [busy]="vehicleLoader"></ActivityIndicator>
+        </StackLayout>
+        <StackLayout col="0" row="2" style="background-color: black">
+        <GridLayout columns="*,8*,*" rows="*">
+                <StackLayout col="0" row="0" style="vertical-align: center; margin-left: 10">
+                        <Image src="res://cloud_icon" style="horizontal-align: center"></Image>
+                </StackLayout>
+                <StackLayout col="1" row="0" style="vertical-align: center">
+                        <Label class="h2" text="Shyft Auto By Kloud DMS"  style=" color: white; text-align: center"></Label>                                                                                                                                                                             
+                </StackLayout> 
+                <StackLayout col="2" row="0"></StackLayout>                                    
+        </GridLayout> 
+        </StackLayout>        
+</GridLayout>

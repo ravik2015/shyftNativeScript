@@ -1,0 +1,99 @@
+{
+  "_from": "@klouddms/futuredms-shyft-api-client@^0.4.2",
+  "_id": "@klouddms/futuredms-shyft-api-client@0.4.2",
+  "_inBundle": false,
+  "_integrity": "sha512-qlJpl89lehD8n/W31MnZDS/oNtWwt6wubELRk7CtXaIXIEVSamqO4kDpFmlpTNJzKb6OdPA5VD1Rst0AbDdXLw==",
+  "_location": "/@klouddms/futuredms-shyft-api-client",
+  "_phantomChildren": {
+    "chokidar": "1.7.0",
+    "minimist": "1.2.0",
+    "reflect-metadata": "0.1.12",
+    "tsickle": "0.27.2",
+    "tslib": "1.9.0"
+  },
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "@klouddms/futuredms-shyft-api-client@^0.4.2",
+    "name": "@klouddms/futuredms-shyft-api-client",
+    "escapedName": "@klouddms%2ffuturedms-shyft-api-client",
+    "scope": "@klouddms",
+    "rawSpec": "^0.4.2",
+    "saveSpec": null,
+    "fetchSpec": "^0.4.2"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/@klouddms/futuredms-shyft-api-client/-/futuredms-shyft-api-client-0.4.2.tgz",
+  "_shasum": "5427c77ae6da5bac90cdd615cc6297dc6e671199",
+  "_spec": "@klouddms/futuredms-shyft-api-client@^0.4.2",
+  "_where": "/Users/saurabh.chauhan/Desktop/shyft",
+  "author": {
+    "name": "l.bauche@hqlabs.com"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "@angular/animations": "^5.2.5",
+    "@angular/compiler-cli": "^5.2.5",
+    "@angular/platform-server": "^5.2.5"
+  },
+  "deprecated": false,
+  "description": "Futuredms-Shyft-API-Client",
+  "devDependencies": {
+    "@angular/cli": "1.6.7",
+    "@angular/common": "^5.2.5",
+    "@angular/compiler": "^5.2.5",
+    "@angular/compiler-cli": "^5.2.5",
+    "@angular/core": "^5.2.5",
+    "@angular/http": "^5.2.5",
+    "@angular/platform-browser": "^5.2.5",
+    "@angular/platform-browser-dynamic": "^5.2.5",
+    "@angular/router": "^5.2.5",
+    "@types/node": "^6.0.45",
+    "angular2-moment": "^1.6.0",
+    "angular2-wizard": "^0.4.0",
+    "del": "^2.1.0",
+    "gulp": "^3.9.1",
+    "gulp-clean": "^0.3.2",
+    "gulp-inline-ng2-template": "^4.0.0",
+    "gulp-install": "^0.6.0",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-sass": "^2.3.2",
+    "gulp-sourcemaps": "^2.1.1",
+    "gulp-typescript": "^3.2.1",
+    "gulp-typings": "^2.0.4",
+    "gulp-uglify": "^2.0.0",
+    "html-webpack-cdn-plugin": "^0.2.0",
+    "run-sequence": "^1.2.2",
+    "rxjs": "^5.5.0",
+    "typescript": "^2.4.2",
+    "typings": "^2.1.1",
+    "webpack": "~3.10.0",
+    "webpack-dev-server": "~2.11.0",
+    "webpack-sources": "^1.1.0",
+    "xyz": "^2.1.0"
+  },
+  "homepage": "https://www.helloHQ.io",
+  "keywords": [
+    "Angular",
+    "Library"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "name": "@klouddms/futuredms-shyft-api-client",
+  "repository": {
+    "type": "git",
+    "url": "https://git-codecommit.us-east-1.amazonaws.com/v1/repos/futuredms-shyft-api-web-client"
+  },
+  "scripts": {
+    "build": "ng build",
+    "e2e": "ng e2e",
+    "lint": "ng lint",
+    "ng": "ng",
+    "start": "ng serve",
+    "test": "ng test"
+  },
+  "types": "index.d.ts",
+  "version": "0.4.2"
+}

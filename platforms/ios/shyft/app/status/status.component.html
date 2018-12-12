@@ -1,0 +1,117 @@
+<GridLayout columns="*" rows="*,9*">
+        <StackLayout col="0" row="0" style="background-color: black">
+                <GridLayout columns="*,8*,*" rows="*">
+                        <StackLayout col="0" row="0">
+                                <!-- <Label class="h2 fa" text="&#xf053;" (onTap)="onBack()" style="horizontal-align: left; color: white; padding: 20 0 0 10 "></Label> -->
+                        </StackLayout>
+                        <StackLayout col="1" row="0" style="vertical-align: center">
+                                <Label class="h2" text="Status Tracker" style=" color: white; text-align: center"></Label>
+                        </StackLayout>
+                        <StackLayout col="2" row="0"></StackLayout>
+                </GridLayout>
+        </StackLayout>
+        <GridLayout column=0 row=1 columns="*" rows="*,9*">
+                <StackLayout col="0" row="0">
+                        <Image src="res://shyftlogo"></Image>
+                </StackLayout>
+                <GridLayout col="0" row="1" columns="*" rows="*,3*,4*,2*">
+                        <StackLayout col="0" row="0" style="vertical-align: center; background-color: #170095; margin: 0 5 0 5;">
+                                <Label text="SUCCESS! We are on the way." style="padding: 5; text-align: center; font-weight: bold; color: white;"></Label>
+                        </StackLayout>
+                        <GridLayout col="0" row="1" columns="*" rows="3*, 7*" style="margin: 2; border-width: 2; border-color: #170095; ">
+                                <StackLayout col="0" row="0" style="vertical-align: center;">
+                                        <Label text="Vehicle Tracking and Status" style=" text-align: center; font-weight: bold; color: black; background-color: white;"></Label>
+                                </StackLayout>
+                                <GridLayout col="0" row="1" columns="*" rows="5*,5*">
+                                        <GridLayout col="0" row="0" columns="*,1.11*,1.11*,1.11*,1.33*,1.11*,1.11*,1.11*,*" rows="*" style="vertical-align: center">
+                                                <StackLayout col="0" row="0">
+                                                        <Image src="res://line" height="90%" width="90%"></Image>
+                                                </StackLayout>
+                                                <StackLayout col="1" row="0">
+                                                        <Image [visibility]="appointmentVisible ? 'visible' : 'collapsed'" src="res://filledcircle" height="90%" width="90%"></Image>
+                                                        <Image [visibility]="appointmentVisible ? 'collapsed' : 'visible'" src="res://circle" height="90%" width="90%"></Image>                                                        
+                                                </StackLayout>
+                                                <StackLayout col="2" row="0">
+                                                        <Image [visibility]="appointmentVisible ? 'visible' : 'collapsed'" src="res://statuscar" height="90%" width="90%"></Image>
+                                                        <Image [visibility]="appointmentVisible ? 'collapsed' : 'visible'" src="res://line" height="90%" width="90%"></Image>                                                        
+                                                </StackLayout>
+                                                <StackLayout col="3" row="0">
+                                                        <Image src="res://circle" height="90%" width="90%"></Image>
+                                                </StackLayout>
+                                                <StackLayout col="4" row="0">
+                                                        <Image src="res://line" height="90%" width="90%"></Image>
+                                                </StackLayout>
+                                                <StackLayout col="5" row="0">
+                                                        <Image src="res://circle" height="90%" width="90%"></Image>
+                                                </StackLayout>
+                                                <StackLayout col="6" row="0">
+                                                        <Image src="res://line" height="90%" width="90%"></Image>
+                                                </StackLayout>
+                                                <StackLayout col="7" row="0">
+                                                        <Image src="res://circle" height="90%" width="90%"></Image>
+                                                </StackLayout>
+                                                <StackLayout col="8" row="0">
+                                                        <Image src="res://line" height="90%" width="90%"></Image>
+                                                </StackLayout>
+                                        </GridLayout>
+                                        <GridLayout col="0" row="2" columns="2.5*,2.5*,2.5*,2.5*" rows="*">
+                                                <StackLayout col="0" row="0" style="vertical-align: center;">
+                                                        <Label text="On The Way!" textWrap="true" style="font-size:14; text-align: center;"></Label>
+                                                </StackLayout>
+                                                <StackLayout col="1" row="0" style="vertical-align: center;">
+                                                        <Label text="Vehicle in route to Dealership" textWrap="true" style="font-size:14; text-align: center;"></Label>
+                                                        <!-- <Label text="Dealership" style="font-size:14; text-align: center;"></Label> -->
+                                                </StackLayout>
+                                                <StackLayout col="2" row="0" style="vertical-align: center;">
+                                                        <Label text="Technician working on Vehicle" textWrap="true" style="font-size:14; text-align: center;"></Label>
+                                                        <!-- <Label text="on Vehicle" style=" text-align: center;"></Label> -->
+                                                </StackLayout>
+                                                <StackLayout col="3" row="0" style="vertical-align: center;">
+                                                        <Label text="Vehicle Finished" textWrap="true" style="font-size:14; text-align: center;"></Label>
+                                                </StackLayout>
+                                        </GridLayout>
+                                </GridLayout>
+                        </GridLayout>
+                        <GridLayout col="0" row="2" columns="*" rows="3*,3*,4*">
+                                <StackLayout column="0" row="0" style="vertical-align: center;">
+                                        <Label text="Service Facility" class="h2" style=" text-align: center; font-weight: bold;"></Label>
+                                </StackLayout>
+                                <StackLayout column="0" row="1" style="horizontal-align: center">
+                                        <Image [src]="'https://s3.amazonaws.com/img.futuredms.com/vendors/logos/'+vendorLogo"></Image>
+                                </StackLayout>
+                                <GridLayout column="0" row="2" columns="2.5*,2.5*,2.5*,2.5*" rows="*">
+                                        <StackLayout col="0" row="0"></StackLayout>
+                                        <StackLayout col="1" row="0" (onTap)="callDealer()" style="margin: 5 10 10 10">
+                                                <Image src="res://telephone" height="50%" width="50%"></Image>
+                                        </StackLayout>
+                                        <StackLayout col="2" row="0" style="margin: 5 10 10 10">
+                                                <Image src="res://message" height="50%" width="50%"></Image>
+                                        </StackLayout>
+                                        <StackLayout col="3" row="0"></StackLayout>
+                                </GridLayout>
+                        </GridLayout>
+                        <GridLayout col="0" row="3" columns="*" rows="*,*">
+                                <GridLayout col="0" row="0" (onTap)="dashboard()" columns="2*,6*,2*" rows="*" style="background-color: black; margin: 10 10 5 10; border-width: 2; border-color: dodgerblue;">
+                                        <StackLayout col="0" row="1" style="vertical-align: center; margin: 8">
+                                                <Image src="res://house" style="color: white; "></Image>
+                                        </StackLayout>
+                                        <StackLayout col="1" row="0" style="vertical-align: center;">
+                                                <Label text="Go Back To Dashboard" style="color: white; text-align: center; font-weight: bold;"></Label>
+                                        </StackLayout>
+                                        <StackLayout col="2" row="0" style="vertical-align: center;">
+                                        </StackLayout>
+                                </GridLayout>
+                                <GridLayout col="0" row="1" columns="2*,6*,2*" (onTap)="cancelAppointment()" rows="*" style="background-color: #F55A60; margin: 5 10 10 10; border-width: 2; border-color: dodgerblue">
+                                        <StackLayout col="0" row="1" style="vertical-align: center; margin: 8">
+                                                <Image src="res://cancel" style="color: white; "></Image>
+                                        </StackLayout>
+                                        <StackLayout col="1" row="0" style="vertical-align: center;">
+                                                <Label text="Cancel Pickup"  style="color: white; text-align: center; font-weight: bold;"></Label>
+                                        </StackLayout>
+                                        <StackLayout col="2" row="0" style="vertical-align: center;">
+                                        </StackLayout>
+                                </GridLayout>
+                        </GridLayout>
+                </GridLayout>
+        </GridLayout>
+</GridLayout>

@@ -1,0 +1,75 @@
+{
+  "_from": "nativescript-websockets@^1.4.0",
+  "_id": "nativescript-websockets@1.4.0",
+  "_inBundle": false,
+  "_integrity": "sha512-acA+QC9Kba8fZRAJMbt3hI44X1aYsKB6wji1iFzSbiWJSbMhY9o1yoIKLl0wtp8540NIgqeKCa0aa1OUnuY41A==",
+  "_location": "/nativescript-websockets",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "nativescript-websockets@^1.4.0",
+    "name": "nativescript-websockets",
+    "escapedName": "nativescript-websockets",
+    "rawSpec": "^1.4.0",
+    "saveSpec": null,
+    "fetchSpec": "^1.4.0"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/nativescript-websockets/-/nativescript-websockets-1.4.0.tgz",
+  "_shasum": "3e86d39f871ed85a39c39d74a59cdb7b64249517",
+  "_spec": "nativescript-websockets@^1.4.0",
+  "_where": "/Users/saurabh.chauhan/Desktop/shyft",
+  "author": {
+    "name": "Nathanael Anderson",
+    "email": "nathan@master-technology.com"
+  },
+  "bugs": {
+    "url": "https://github.com/nathanaela/nativescript-websockets/issues"
+  },
+  "bundleDependencies": false,
+  "contributors": [
+    {
+      "name": "Aleksey Gureiev",
+      "email": "spyromus@noizeramp.com",
+      "url": "https://github.com/alg"
+    },
+    {
+      "name": "Choi Won",
+      "email": "help@myso.kr",
+      "url": "https://github.com/myso-kr"
+    }
+  ],
+  "deprecated": false,
+  "description": "A WebSocket NativeScript module for Android and iOS",
+  "homepage": "https://github.com/nathanaela/nativescript-websockets",
+  "keywords": [
+    "NativeScript",
+    "WebSockets",
+    "Development",
+    "JavaScript",
+    "Android",
+    "iOS",
+    "Sockets",
+    "Websocket"
+  ],
+  "license": {
+    "type": "MIT & Apache 2.0",
+    "url": "https://github.com/nathanaela/nativescript-sqlite/blob/master/LICENSE"
+  },
+  "main": "websockets",
+  "name": "nativescript-websockets",
+  "nativescript": {
+    "platforms": {
+      "android": "1.4.0",
+      "ios": "1.4.0"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nathanaela/nativescript-websockets.git"
+  },
+  "version": "1.4.0"
+}

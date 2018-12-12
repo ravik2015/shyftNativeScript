@@ -1,0 +1,91 @@
+PODS:
+  - BEMCheckBox (1.4.1)
+  - Braintree/3D-Secure (4.12.0):
+    - Braintree/Card
+    - Braintree/Core
+  - Braintree/Apple-Pay (4.12.0):
+    - Braintree/Core
+  - Braintree/Card (4.12.0):
+    - Braintree/Core
+  - Braintree/Core (4.12.0)
+  - Braintree/PaymentFlow (4.12.0):
+    - Braintree/Card
+    - Braintree/Core
+  - Braintree/PayPal (4.12.0):
+    - Braintree/Core
+    - Braintree/PayPalOneTouch
+  - Braintree/PayPalDataCollector (4.12.0):
+    - Braintree/Core
+    - Braintree/PayPalUtils
+  - Braintree/PayPalOneTouch (4.12.0):
+    - Braintree/Core
+    - Braintree/PayPalDataCollector
+    - Braintree/PayPalUtils
+  - Braintree/PayPalUtils (4.12.0)
+  - Braintree/UnionPay (4.12.0):
+    - Braintree/Card
+    - Braintree/Core
+  - Braintree/Venmo (4.12.0):
+    - Braintree/Core
+    - Braintree/PayPalDataCollector
+  - BraintreeDropIn (6.1.0):
+    - BraintreeDropIn/DropIn (= 6.1.0)
+  - BraintreeDropIn/DropIn (6.1.0):
+    - Braintree/Card (~> 4.11)
+    - Braintree/Core (~> 4.11)
+    - Braintree/PaymentFlow (~> 4.11)
+    - Braintree/UnionPay (~> 4.11)
+    - BraintreeDropIn/UIKit
+  - BraintreeDropIn/UIKit (6.1.0)
+  - CardIO (5.4.1)
+  - IQKeyboardManager (5.0.8)
+  - Mapbox-iOS-SDK (3.7.6)
+  - MBProgressHUD (1.1.0)
+  - PocketSocket (1.0.1):
+    - PocketSocket/Client (= 1.0.1)
+    - PocketSocket/Core (= 1.0.1)
+    - PocketSocket/Server (= 1.0.1)
+  - PocketSocket/Client (1.0.1):
+    - PocketSocket/Core
+  - PocketSocket/Core (1.0.1)
+  - PocketSocket/Server (1.0.1):
+    - PocketSocket/Client
+  - SCLAlertView-Objective-C (1.1.3)
+
+DEPENDENCIES:
+  - BEMCheckBox (~> 1.4.1)
+  - Braintree/3D-Secure
+  - Braintree/Apple-Pay
+  - Braintree/PayPal
+  - Braintree/Venmo
+  - BraintreeDropIn
+  - CardIO
+  - IQKeyboardManager (~> 5.0.0)
+  - Mapbox-iOS-SDK (~> 3.7.3)
+  - MBProgressHUD
+  - PocketSocket (from `https://github.com/NathanaelA/PocketSocket`)
+  - SCLAlertView-Objective-C
+
+EXTERNAL SOURCES:
+  PocketSocket:
+    :git: https://github.com/NathanaelA/PocketSocket
+
+CHECKOUT OPTIONS:
+  PocketSocket:
+    :commit: b4579b39d0de3a771148e89d3fa27a5787833b70
+    :git: https://github.com/NathanaelA/PocketSocket
+
+SPEC CHECKSUMS:
+  BEMCheckBox: 5ba6e37ade3d3657b36caecc35c8b75c6c2b1a4e
+  Braintree: c29956dab4533fb5966fe32cda1fca56e74d9d57
+  BraintreeDropIn: 2e8bba4facf6cc925176637030454d8308223b95
+  CardIO: 56983b39b62f495fc6dae9ad7cf875143df06443
+  IQKeyboardManager: 266cb7b1d11f94a3e71229d77f960f9a1b538e5b
+  Mapbox-iOS-SDK: 23ececda1d90c3b436b45e2c88e9677f025303c0
+  MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
+  PocketSocket: ed13efbabd383b065fb9ac79f8d1204f0121a745
+  SCLAlertView-Objective-C: 917836fb2349afa58edc43d592d22d21d46bb2a4
+
+PODFILE CHECKSUM: f42d85c60530453446db2629d7c137f8dd912317
+
+COCOAPODS: 1.4.0

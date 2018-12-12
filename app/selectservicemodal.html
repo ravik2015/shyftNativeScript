@@ -1,0 +1,70 @@
+<GridLayout columns="*" rows="3*,5*,2*" padding="10" backgroundColor="#404040">
+        <StackLayout col=0 row=0 >
+        </StackLayout>
+        <StackLayout col=0 row=1 borderColor="dodgerblue" borderWidth="2" borderRadius="10" backgroundColor="white">   
+           <GridLayout columns="*" rows="*,6*,3*"  >
+                <StackLayout col=0 row=0 style="vertical-align: center; horizontal-align: center; font-weight: bold;">
+                    <Label class="h2" text="Select Your Service" color="black"></Label>
+                </StackLayout>
+                <StackLayout col=0 row=1 style="border-bottom-width: 1; border-color: #404040">       
+                    <ScrollView sdkExampleTitle sdkToggleNavButton>
+                                    <StackLayout >
+                                            <StackLayout  *ngFor="let item of frameworks; let i = index" >
+                                                    <StackLayout orientation="horizontal" padding="10" >
+                                                            <GridLayout columns="6*,2*,2*" rows="*">
+                                                            <StackLayout  col=0 row=0 style="vertical-align: center;">
+                                                            <Label textWrap="true" [text]="item?.name" style="color: black; padding-left:5; font-weight: bold;"></Label> 
+                                                            </StackLayout>
+                                                            <StackLayout col=1 row=0 style="horizontal-align: center; vertical-align: center;" > 
+                                                            <Label textWrap="true" [text]="'$'+item?.base_price" style="color: black; text-align: center; padding-left:5; font-weight: bold;"></Label>                                                                        
+                                                            </StackLayout>
+                                                            <StackLayout col=2 row=0  style="horizontal-align: right;">
+                                                            <Switch  checked="false" (checkedChange)="onCheck($event, item, i)" ></Switch>                                            
+                                                            </StackLayout>
+                                                            </GridLayout>
+                                                    </StackLayout>     
+                                            </StackLayout>
+                                    </StackLayout>
+                    </ScrollView>
+                </StackLayout>
+                <StackLayout col=0 row=2  style="vertical-align: center; horizontal-align: center; " >
+                        <Label class="h3" [text]="'Total = $'+ this.totalCost+ '+ tax &'" color="black" style="font-weight: bold;"></Label>
+                        <Label class="h3" text="Pickup Delivery Fee" color="black" style="font-weight: bold; padding-left: 5"></Label>       
+                        <!-- <GridLayout columns="*" rows="*,*" >
+                                <StackLayout  col=0 row=0 style="vertical-align: center" (tap)="onAgree()">
+                                            <GridLayout columns="*,9*" rows="*"  (onTap)="onAgree()">
+                                                    <StackLayout col="0" row="0" style="vertical-align: center">
+                                                            <Label class="h3 fa" text="&#xf14a;" [color] = "state ? 'green' : 'white'" style="horizontal-align: center; font-weight: bold; border-width: 1; border-color: black; "></Label>
+                                                    </StackLayout>
+                                                    <StackLayout col="1" row="0" style="vertical-align: center">
+                                                            <Label class="h3" text="I agree to said terms chosen by creator of application" textWrap=true color="black" style=" font-weight: bold; "></Label>                                        
+                                                    </StackLayout>
+                                            </GridLayout>
+                                            <CheckBox #CB1 text="I agree to said terms chosen by creator of application"  (tap)="onAgree()" style=" font-weight: bold; margin: 5" checked="false"></CheckBox>                                        
+                                </StackLayout>
+                                <StackLayout col=0 row=1 style="vertical-align: center; horizontal-align: center; ">
+                                        <Label class="h3" [text]="'Total = $'+ this.totalCost+ '+ tax &'" color="black" style="font-weight: bold;"></Label>
+                                        <Label class="h3" text="Pickup Delivery Fee" color="black" style="font-weight: bold; padding-left: 5"></Label>                                    
+                                </StackLayout>
+                        </GridLayout> -->
+                </StackLayout>
+           </GridLayout>
+        </StackLayout>
+        <StackLayout col=0 row=2 >
+                <GridLayout columns="*" rows="5*,5*" >
+                        <StackLayout col=0 row=0 >
+                                                       
+                        </StackLayout>
+                        <StackLayout col=0 row=1 >
+                                <GridLayout columns="*,*" rows="*" borderColor="#dadada" borderWidth="2" borderRadius="10" backgroundColor="white">
+                                        <StackLayout col=0 row=0  style=" padding-top: 15%; border-right-width:2; border-color: #404040">
+                                                <Label text="Cancel" class="h2" style=" text-align: center;" (tap)="close()"></Label>                            
+                                        </StackLayout>
+                                        <StackLayout col=1 row=0  style="padding-top: 15%; ">
+                                                <Label text="Submit" class="h2" color="dodgerblue" style=" text-align: center;" (tap)="submit()" ></Label>                            
+                                        </StackLayout>
+                                    </GridLayout>
+                        </StackLayout>
+                    </GridLayout>
+        </StackLayout>
+    </GridLayout>

@@ -1,0 +1,15 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = require("@angular/core");
+require("rxjs/add/operator/map");
+require("rxjs/add/operator/do");
+var AppointmentdataService = (function () {
+    function AppointmentdataService() {
+    }
+    AppointmentdataService = __decorate([
+        core_1.Injectable()
+    ], AppointmentdataService);
+    return AppointmentdataService;
+}());
+exports.AppointmentdataService = AppointmentdataService;
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiYXBwb2ludG1lbnRkYXRhLnNlcnZpY2VzLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiYXBwb2ludG1lbnRkYXRhLnNlcnZpY2VzLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7O0FBQUEsc0NBQTJDO0FBSTNDLGlDQUErQjtBQUMvQixnQ0FBOEI7QUFLOUI7SUFBQTtJQUVBLENBQUM7SUFGWSxzQkFBc0I7UUFEbEMsaUJBQVUsRUFBRTtPQUNBLHNCQUFzQixDQUVsQztJQUFELDZCQUFDO0NBQUEsQUFGRCxJQUVDO0FBRlksd0RBQXNCIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHsgSW5qZWN0YWJsZSB9IGZyb20gXCJAYW5ndWxhci9jb3JlXCI7XG5pbXBvcnQgeyBIdHRwLCBIZWFkZXJzLCBSZXNwb25zZSwgUmVxdWVzdE9wdGlvbnMgfSBmcm9tIFwiQGFuZ3VsYXIvaHR0cFwiO1xuaW1wb3J0IHsgT2JzZXJ2YWJsZSBhcyBSeE9ic2VydmFibGUgfSBmcm9tIFwicnhqcy9PYnNlcnZhYmxlXCI7XG5pbXBvcnQgKiBhcyBBcHBsaWNhdGlvblNldHRpbmdzIGZyb20gXCJhcHBsaWNhdGlvbi1zZXR0aW5nc1wiO1xuaW1wb3J0IFwicnhqcy9hZGQvb3BlcmF0b3IvbWFwXCI7XG5pbXBvcnQgXCJyeGpzL2FkZC9vcGVyYXRvci9kb1wiO1xuaW1wb3J0ICogYXMgdXRpbHMgZnJvbSAnLi4vc2hhcmVkL3V0aWxzJztcbmltcG9ydCB7IGlzQW5kcm9pZCwgaXNJT1MsIGRldmljZSwgc2NyZWVuIH0gZnJvbSBcInBsYXRmb3JtXCI7XG5cbkBJbmplY3RhYmxlKClcbmV4cG9ydCBjbGFzcyBBcHBvaW50bWVudGRhdGFTZXJ2aWNlIHtcblxufVxuIl19

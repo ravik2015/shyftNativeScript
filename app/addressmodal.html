@@ -1,0 +1,20 @@
+<GridLayout columns="*" rows="*,*,8*"> 
+                <StackLayout column=0 row=0 style="border-bottom-width: 1; border-color: #dadada; background-color: black">
+                        <StackLayout >
+                            <Label class="h2 fa" text="&#xf060;" (onTap)="onBack()" style="horizontal-align: left; color: white; padding: 20 0 0 10 "></Label>     
+                        </StackLayout>   
+                </StackLayout> 
+                <StackLayout column=0 row=1 style="vertical-align: center; backgroundColor: #606060" tap="clearTextfieldFocus()">
+                        <TextField #textField backgroundColor="transparent" id="place" (textChange)="onTextChange($event)" (onTap)="pressed()" [text]="address"
+                                class="TextFieldPost" hint="Pickup Location ?" style="border-width: 1; border-color: black; margin-left: 20; margin-right: 20; padding: 5"></TextField>
+                </StackLayout>
+                <StackLayout column=0 row=2>
+                        <ListView [items]="dataItems" suggestMode="Suggest" displayMode="Tokens">
+                                <ng-template tkSuggestionItemTemplate let-item="item">
+                                        <StackLayout orientation="vertical" padding="10">
+                                                <Label [text]="item.text" (onTap)="itemTapped($event, item)"></Label>
+                                        </StackLayout>
+                                </ng-template>
+                        </ListView>
+                </StackLayout>
+        </GridLayout>

@@ -1,0 +1,44 @@
+<GridLayout columns="*" rows="2*,*,7*">
+        <StackLayout col=0 row=0 style="border-color: #CCCCCC; border-bottom-width: 2">
+                <GridLayout columns="*" rows="*,*">
+                        <GridLayout col="0" row="0" columns="2*,6*,2*" rows="*" style="vertical-align: bottom">
+                                <StackLayout col=0 row=0>
+                                        <Label text="&#xf111;" class="h2 fa" style="color: green; margin-top: 5;  text-align: right;"></Label>
+                                </StackLayout>
+                                <StackLayout col=1 row=0>
+                                        <Label text="______________________________________" class="fa" style="text-align: center"></Label>
+                                </StackLayout>
+                                <StackLayout col=2 row=0>
+                                        <Label text="&#xf111;" class="h2 fa" style="color: green; margin-top: 5;  text-align: left;"></Label>
+                                </StackLayout>
+                        </GridLayout>
+                        <GridLayout col="0" row="1" columns="4*,2*,4*" rows="*">
+                                <StackLayout col=0 row=0>
+                                        <Label text="USER AGREEMENT" style="color: black; text-align: center;"></Label>
+                                </StackLayout>
+                                <StackLayout col=1 row=0></StackLayout>
+                                <StackLayout col=2 row=0>
+                                        <Label text="CREATE CUSTOMER" style="color: black; text-align: center;"></Label>
+                                </StackLayout>
+                        </GridLayout>
+                </GridLayout>
+        </StackLayout>
+        <StackLayout column=0 row=1 style="background-color:dodgerblue;">
+                <Label text="New Profile" class=" h2 font-weight-bold " style="padding: 10%; text-align: center; color: white"></Label>
+        </StackLayout>
+        <StackLayout column=0 row=2 margin="0 20 0 20" verticalAlignment="center">
+                <StackLayout class="form" padding="15" backgroundColor="#FFFFFF">
+                        <StackLayout class="input-field">
+                                <Label text="First name" class=" h3 font-weight-bold "></Label>
+                                <TextField [(ngModel)]="firstname"></TextField>
+                                <StackLayout class="hr-light"></StackLayout>
+                        </StackLayout>
+                        <StackLayout class="input-field">
+                                <Label text="Last name" class=" h3 font-weight-bold "></Label>
+                                <TextField [(ngModel)]="lastname"></TextField>
+                                <StackLayout class="hr-light"></StackLayout>
+                        </StackLayout>
+                        <Button class="btn btn-primary w-full" style="background-color: dodgerblue" text="Add Customer" (tap)="onTap()"></Button>
+                </StackLayout>
+        </StackLayout>
+</GridLayout>

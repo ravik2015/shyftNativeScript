@@ -1,0 +1,115 @@
+<ActionBar class="action-bar">
+    <NavigationButton ios:visibility="collapsed" icon="res://menu" (tap)="onDrawerButtonTap()"></NavigationButton>
+    <ActionItem icon="res://navigation/menu" android:visibility="collapsed" (tap)="onDrawerButtonTap()" ios.position="left">
+    </ActionItem>
+    <StackLayout orientation="horizontal" style="horizontal-align: center;">
+        <Image class="cloud" src="https://www.manageengine.com.au/fr/mobile-device-management/images/cloud-icon-1.png" style="text-align: center; vertical-align: center;"></Image>
+        <Label text="Shyft" class="action-label" style="padding-left: 5"></Label>
+    </StackLayout>
+    <ActionItem icon="res://dots" android:visibility="collapsed" (tap)="rightButton()" ios.position="right">
+    </ActionItem>
+</ActionBar>
+
+<RadSideDrawer #drawer showOverNavigation="true" [drawerTransition]="sideDrawerTransition">
+
+    <StackLayout tkDrawerContent>
+        <MyDrawer></MyDrawer>
+    </StackLayout>
+
+    <GridLayout class="page page-content" tkMainContent>
+        <GridLayout columns="*" rows="*,3*,*,*" style="padding: 10;">
+            <StackLayout col="0" row="0" style="margin-bottom: 10; border-width: 1; border-color: black;">
+                <GridLayout columns="*" rows="*,*">
+                    <StackLayout col="0" row="0" style=" border-width: 1; border-color: #dadada;">
+                        <Label class="p-5" text="Just For You" textWrap="true" style="font-weight: bold"></Label>
+                    </StackLayout>
+                    <StackLayout col="0" row="1">
+                        <GridLayout columns="*, 7*" rows="*">
+                            <StackLayout col="0" row="0" style="vertical-align: center;">
+                                <Label class="page-iconMonstar fa" text="&#xf23c;" style="padding-left: 10"></Label>
+                            </StackLayout>
+                            <StackLayout col="1" row="0" style="vertical-align: center;">
+                                <Label text="Special Offers" textWrap="true" style="color: #dadada; "></Label>
+                            </StackLayout>
+                        </GridLayout>
+                    </StackLayout>
+                </GridLayout>
+            </StackLayout>
+            <StackLayout col="0" row="1">
+                <GridLayout columns="*,*" rows="*,4*,4*" style="border-width: 1;">
+                    <StackLayout col="0" row="0" style="vertical-align: center;">
+
+                    </StackLayout>
+                    <StackLayout col="1" row="0" style="horizontal-align: right; margin-right: 15; vertical-align: center;">
+                        <Label class="page-plus fa" text="&#xf067;" (onTap)="add()"></Label>
+                    </StackLayout>
+                    <StackLayout col="0" row="1" style="vertical-align: center;">
+                        <GridLayout columns="*" rows="2*,*" style="padding-left: 10; padding-right: 10; padding-bottom: 10">
+                            <StackLayout col="0" row="0" style="background-color: #4286f4; border-width: 1; border-color: black;" (tap)="intake()">
+                                <Label class="page-iconSetting fa" text="&#xf085;"></Label>
+                                <Label text="2017 Honda Pilot EX-L" textWrap="true" style="text-align: center; color: white; "></Label>
+                                <Label text="11,417 Miles" textWrap="true" style="text-align: center; color: white"></Label>
+                            </StackLayout>
+                            <StackLayout col="0" row="1" style="background-color: white; border-width: 1; border-color: black;" (tap)="intake()">
+                                <Label class=" blueFont" text="Schedule Service" textWrap="true"></Label>
+                            </StackLayout>
+                        </GridLayout>
+                    </StackLayout>
+                    <StackLayout col="1" row="1">
+                        <GridLayout columns="*" rows="2*,*" style=" padding-right: 10; padding-bottom: 10" (tap)="recalls()">
+                            <StackLayout col="0" row="0" style="background-color: #41e5f4; border-width: 1; border-color: black;">
+                                <Label class="page-iconWarning fa" text="&#xf071;"></Label>
+                            </StackLayout>
+                            <StackLayout col="0" row="1" style="background-color: white; border-width: 1; border-color: black;">
+                                <Label class=" blueFont" text="Check For Recalls" textWrap="true"></Label>
+                            </StackLayout>
+                        </GridLayout>
+                    </StackLayout>
+                    <StackLayout col="0" row="2">
+                        <GridLayout columns="*" rows="2*,*" style="padding-left: 10; padding-right: 10; padding-bottom: 10" (tap)="servicehistory()">
+                            <StackLayout col="0" row="0" style="background-color: #f4a641; border-width: 1; border-color: black;">
+                                <Label class="page-iconSetting1 fa" text="&#xf0c7;"></Label>
+                            </StackLayout>
+                            <StackLayout col="0" row="1" style="background-color: white; border-width: 1; border-color: black;">
+                                <Label class=" blueFont" text="Service History" textWrap="true"></Label>
+                            </StackLayout>
+                        </GridLayout>
+                    </StackLayout>
+                    <StackLayout col="1" row="2">
+                        <GridLayout columns="*" rows="2*,*" style=" padding-right: 10; padding-bottom: 10">
+                            <StackLayout col="0" row="0" style="background-color: #FFB6C1; border-width: 1; border-color: black;">
+                                <Label class="page-iconCar fa" text="&#xf1b9;"></Label>
+                            </StackLayout>
+                            <StackLayout col="0" row="1" style="background-color: white; border-width: 1; border-color: black;">
+                                <Label class=" blueFont" text="Get Trade-In Appraisel" textWrap="true"></Label>
+                            </StackLayout>
+                        </GridLayout>
+                    </StackLayout>
+                </GridLayout>
+            </StackLayout>
+            <StackLayout col="0" row="2" style="margin-bottom: 10; margin-top: 10; border-width: 1; border-color: black;">
+                <GridLayout columns="*" rows="*">
+                    <StackLayout col="0" row="0" style="background-color: white; border-width: 1; border-color: #dadada;">
+                        <Label text="Did you know?" textWrap="true"></Label>
+                        <TextView backgroundColor="transparent" text="Most newer cars use 0w-20 synthetic Blend Motor Oil. It allows the vehicles to run more efficiently and lasts longer  than normal conventinal oil."
+                            hint="Enter some text" [editable]="editState"></TextView>
+                    </StackLayout>
+                </GridLayout>
+            </StackLayout>
+            <StackLayout col="0" row="3" style="background-color: white; padding: 10;margin-bottom: 10; margin-top: 10; border-width: 1; border-color: black;">
+                <GridLayout columns="2*, 3*, *" rows="*" style="border-width: 2; border-color: #41cdf4;">
+                    <StackLayout col="0" row="0" style="vertical-align: center;">
+                        <Label class="page-iconmagic fa" text="&#xf0d0;" style="horizontal-align: right; "></Label>
+                    </StackLayout>
+
+                    <StackLayout col="1" row="0" style="vertical-align: center;">
+                        <Label class="blueFont" text="Price Car Repairs" textWrap="true" style="text-align: center;"></Label>
+                    </StackLayout>
+                    <StackLayout col="2" row="0">
+
+                    </StackLayout>
+                </GridLayout>
+            </StackLayout>
+        </GridLayout>
+    </GridLayout>
+</RadSideDrawer>

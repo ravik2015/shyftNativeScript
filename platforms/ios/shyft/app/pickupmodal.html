@@ -1,0 +1,54 @@
+
+<GridLayout columns="*" rows="2*,6*,2*" backgroundColor="#404040">
+                <StackLayout col=0 row=0>
+                </StackLayout>
+                <StackLayout col=0 row=1>
+                        <GridLayout columns="*" rows="8*,2*" style="margin:0 30 0 30; background-color: white; border-width: 2; border-color: #dadada; border-radius: 15">
+                                <StackLayout col=0 row=0>
+                                        <GridLayout columns="*" rows="*,2*,3*,4*">
+                                                <StackLayout col=0 row=0 style="vertical-align: center">
+                                                        <Label text="To Confirm" style="font-weight: bold; text-align: center;"></Label>                                            
+                                                </StackLayout>
+                                                <StackLayout col=0 row=1>
+                                                        <Label text="Pick up @:" textWrap="true" style="font-weight: bold; text-align: center;"></Label>                                                                                                                                                            
+                                                        <Label [text]="address+'@'+time" textWrap="true" style="font-weight: bold; text-align: center;"></Label>                                                                                                    
+                                                </StackLayout>
+                                                <StackLayout col=0 row=2>
+                                                        <Label text="Service to Perform:" textWrap="true" style="font-weight: bold; text-align: center;"></Label>
+                                                        <ListView [items]="frameworks">
+                                                                <ng-template let-framework="item" let-i="index">
+                                                                        <StackLayout orientation="horizontal">
+                                                                                <GridLayout columns="7*,3*" rows="*" style="padding:10">
+                                                                                        <StackLayout col=0 row=0 style="vertical-align: center;">
+                                                                                                <Label textWrap="true" [text]="framework.name" style="color: black; padding-left:5; font-weight: bold;"></Label>
+                                                                                        </StackLayout>
+                                                                                        <StackLayout col=1 row=0 style="horizontal-align: center; vertical-align: center;">
+                                                                                                <Label textWrap="true" [text]="'$'+framework.base_price" style="color: black; text-align: center; padding-left:5; font-weight: bold;"></Label>
+                                                                                        </StackLayout>
+                                                                                </GridLayout>
+                                                                        </StackLayout>
+                                                                </ng-template>
+                                                        </ListView>                                                                                                                                                                                                                    
+                                                </StackLayout>
+                                                <StackLayout col=0 row=3 style="vertical-align: center; margin: 5">
+                                                                <Label [text]="'Current Delivery Fee: $'+todaysFee" style="color: white; padding:3; text-align: center; background-color: dodgerblue; border-width: 2; border-color: black;"></Label>                                                        
+                                                                <Label [text]="'Total Cost: $'+totalcost" style="color: black; padding:3; text-align: center;"></Label>   
+                                                                <CheckBox #CB1 text="I agree to said terms chosen by creator of application" (tap)="onAgree()"  checked="false"></CheckBox>                                                                                                        
+                                                </StackLayout>
+                                        </GridLayout>                                                        
+                                </StackLayout>
+                                <StackLayout col=0 row=1>
+                                        <GridLayout columns="*,*" rows="*" style="border-top-width:2; border-color: #404040">
+                                                <StackLayout col=0 row=0 style=" vertical-align: center; border-right-width:2; border-color: #404040">
+                                                        <Label text="Cancel" class="h2" style=" text-align: center;" (tap)="close()"></Label>
+                                                </StackLayout>
+                                                <StackLayout col=1 row=0 style="vertical-align: center; ">
+                                                        <Label text="Proceed" class="h2" style=" text-align: center;" (tap)="payment()"></Label>
+                                                </StackLayout>
+                                        </GridLayout>
+                                </StackLayout>
+                        </GridLayout>
+                </StackLayout>
+                <StackLayout col=0 row=2>
+                </StackLayout>
+        </GridLayout>
